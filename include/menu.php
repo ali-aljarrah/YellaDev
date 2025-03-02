@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg bg-dark" id="site-nav">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
         <img width="183" height="61" class="img-fluid" loading="lazy" src="/assets/imgs/logo.webp" alt="YellaDev Site Logo">
