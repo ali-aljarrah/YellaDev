@@ -8,20 +8,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link text-white active" href="/"><?php getContent("home", "common"); ?></a>
+        <li class="nav-item mx-1">
+          <a class="nav-link menu-link text-white active" id="home-link" href="/"><?php getContent("home", "common"); ?></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/services"><?php getContent("services", "common"); ?></a>
+        <li class="nav-item mx-1">
+          <a class="nav-link menu-link text-white" id="services-link" href="/services"><?php getContent("services", "common"); ?></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/projects"><?php getContent("projects", "common"); ?></a>
+        <li class="nav-item mx-1">
+          <a class="nav-link menu-link text-white" id="projects-link" href="/projects"><?php getContent("projects", "common"); ?></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/about"><?php getContent("about", "common"); ?></a>
+        <li class="nav-item mx-1">
+          <a class="nav-link menu-link text-white" id="about-link" href="/about"><?php getContent("about", "common"); ?></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/contact"><?php getContent("contact", "common"); ?></a>
+        <li class="nav-item mx-1">
+          <a class="nav-link menu-link text-white" id="contact-link" href="/contact"><?php getContent("contact", "common"); ?></a>
         </li>
       </ul>
     </div>

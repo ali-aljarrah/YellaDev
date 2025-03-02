@@ -1,0 +1,6 @@
+#navbarNav .nav-link{
+    border-bottom: 2px solid transparent;
+}
+#navbarNav .nav-link.active,#navbarNav .nav-link:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
