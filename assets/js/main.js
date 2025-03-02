@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   loader.classList.remove("show");
 
+  if(document.getElementById("footer-date")) {
+    let o = new Date().getFullYear();
+    document.getElementById("footer-date").innerHTML = o;
+  }
+
   // Change language action
   var dropdown = document.getElementById("LangOption");
   dropdown.addEventListener("change", function () {

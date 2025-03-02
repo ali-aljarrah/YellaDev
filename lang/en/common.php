@@ -9,4 +9,5 @@ return [
     "services" => "Services",
     "projects" => "Projects",
     "contact" => "Contact",
+    "copyright" => "Copyright"
 ];

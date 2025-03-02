@@ -1,6 +1,7 @@
 body {
     /* padding-top: 90px; */
     min-height: 100vh;
+    background-color: #000000;
 }
 
 /* width */
@@ -37,6 +38,14 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.scale-0-6 {
+  transform: scale(0.6);
+}
 
 
 /* 
@@ -75,7 +84,6 @@ https://www.tooplate.com/view/2137-barista-cafe
     --border-color:                 #7fffd4;
     --link-hover-color:             #E76F51;
   
-    --body-font-family:             'Plus Jakarta Sans', sans-serif;
   
     --h1-font-size:                 68px;
     --h2-font-size:                 46px;
@@ -96,11 +104,6 @@ https://www.tooplate.com/view/2137-barista-cafe
     --font-weight-light:            300;
     --font-weight-normal:           400;
     --font-weight-bold:             700;
-  }
-  
-  body {
-    background-color: var(--white-color);
-    font-family: var(--body-font-family); 
   }
   
   
@@ -397,7 +400,7 @@ https://www.tooplate.com/view/2137-barista-cafe
   }
   
   .navbar .container {
-    background: rgb(65 65 65);
+    background: #0c0c0c;
     border-radius: var(--border-radius-medium);
     padding: 15px 30px;
   }
@@ -1050,6 +1053,19 @@ https://www.tooplate.com/view/2137-barista-cafe
   
   .copyright-text a {
       color: rgba(255, 200, 160, 0.75);
+  }
+
+
+  footer {
+    background: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  footer .container {
+    background: #0c0c0c;
+    border-radius: var(--border-radius-medium);
+    padding: 15px 30px;
   }
   
   

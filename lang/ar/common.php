@@ -9,4 +9,5 @@ return [
     "services" => "الخدمات",
     "projects" => "المشاريع",
     "contact" => "تواصل",
+    "copyright" => "حقوق الملكية"
 ];
