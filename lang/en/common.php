@@ -1,7 +1,7 @@
 <?php 
 
 return [
-     "yellaDev" => "YellaDev",
+     "yellaDev" => "YELLADEV",
     "arabic" => "Arabic",
     "english" => "English",
     "home" => "Home",

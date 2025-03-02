@@ -430,12 +430,12 @@ https://www.tooplate.com/view/2137-barista-cafe
   .navbar {
     background: transparent;
     z-index: 999999;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   
   .navbar .container {
-    background: rgb(175, 175, 175);
+    background: rgb(65 65 65);
     border-radius: var(--border-radius-medium);
     padding: 15px 30px;
   }

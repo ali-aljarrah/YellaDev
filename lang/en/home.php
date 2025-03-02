@@ -1,7 +1,8 @@
 <?php
 
 return [
-    "welcome_to_yelladev" => "Welcome to YellaDev - Where Innovation Meets Digital Excellence",
+    "welcome_to" => "Welcome To",
+    "where_innovation" => "Where Innovation Meets Digital Excellence",
     "we_dont_just_build_websites" => "At YellaDev, we don't just build websites; we create digital experiences that leave a lasting impression. Whether you're a startup, a growing business, or an established brand, we're here to help you stand out in the crowded online space.",
     "our_experties_lies" => "Our expertise lies in designing and developing <strong> custom websites, e-commerce platforms, and brand identities </strong> that are not only visually stunning but also highly functional. We understand that a website is more than just a digital presence - it's a powerful tool to connect with your audience, drive sales, and grow your business.",
     "what_sets_us" => "What sets us apart?",

@@ -1,16 +1,17 @@
 <?php include 'include/head.php'; ?>
 <title><?php getContent("yellaDev", "common"); ?> - <?php getContent("home", "common"); ?></title>
 </head>
+
 <body>
 
     <?php include 'include/loader.php'; ?>
     <?php include 'include/menu.php'; ?>
 
-    
+
     <!-- <div class="container my-5">
         <div class="row">
             <div class="col-lg-12 mb-4 mb-lg-0">
-                <h1 class="mb-3"><?php getContent("welcome_to_yelladev", "home"); ?></h1>
+                <h1 class="mb-3"><?php getContent("where_innovation", "home"); ?></h1>
                 <p>
                     <?php getContent("we_dont_just_build_websites", "home"); ?>
                 </p>
@@ -42,50 +43,50 @@
     </div> -->
 
 
-                <main>
-                  
-                    <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-    
-                        <div class="container">
-                            <div class="row align-items-center">
-    
-                                <div class="col-lg-6 col-12 mx-auto">
-                                    <em class="small-text">Welcome To</em>
-                                    
-                                    <h1> YELLADEV</h1>
-    
-                                    <p class="text-white mb-4 pb-lg-2">
-                                         Where Innovation Meets Digital Excellence
-                                    </p>
-    
-                                    <a class="btn custom-btn custom-border-btn smoothscroll me-3" href="#section_2">
-                                        Our Story
-                                    </a>
-    
-                                    <a class="btn custom-btn smoothscroll me-2 mb-2" href="#section_3"><strong>Check Menu</strong></a>
-                                </div>
-    
-                            </div>
-                        </div>
-    
-                        <div class="hero-slides vegas-container" style="padding: 0px;">
-                            <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: 1000ms;">
-                                <div class="vegas-slide-inner vegas-animation-kenburns">
-                                </div>
-                            </div>
-                            <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in" style="transition: 1000ms;">
-                                <div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(&quot;imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg&quot;); background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;">
-                                </div>
-                            </div>
-                            <div class="vegas-content-scrollable">
-                                <div class="vegas-content" style="overflow: visible; padding: 0px;">
-                                </div>
-                            </div>
-                        </div>
+    <main>
 
-                    </section>
-    
-<!--     
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 col-12 mx-auto">
+                        <em class="small-text"><?php getContent("welcome_to", "home"); ?></em>
+
+                        <h1><?php getContent("yellaDev", "common"); ?></h1>
+
+                        <p class="text-white mb-4 pb-lg-2">
+                            <?php getContent("where_innovation", "home"); ?>
+                        </p>
+
+                        <a class="btn custom-btn custom-border-btn smoothscroll me-3" href="#section_2">
+                            Our Story
+                        </a>
+
+                        <a class="btn custom-btn smoothscroll me-2 mb-2" href="#section_3"><strong>Check Menu</strong></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hero-slides vegas-container" style="padding: 0px;">
+                <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: 1000ms;">
+                    <div class="vegas-slide-inner vegas-animation-kenburns">
+                    </div>
+                </div>
+                <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in" style="transition: 1000ms;">
+                    <div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(&quot;imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg&quot;); background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;">
+                    </div>
+                </div>
+                <div class="vegas-content-scrollable">
+                    <div class="vegas-content" style="overflow: visible; padding: 0px;">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--     
                     <section class="about-section section-padding" id="section_2">
                         <div class="section-overlay"></div>
                         <div class="container">
@@ -122,9 +123,9 @@
                             </div>
                         </div>
                     </section> -->
-    
-    
-                    <!-- <section class="barista-section section-padding section-bg" id="barista-team">
+
+
+        <!-- <section class="barista-section section-padding section-bg" id="barista-team">
                         <div class="container">
                             <div class="row justify-content-center">
     
@@ -209,9 +210,9 @@
                             </div>
                         </div>
                     </section> -->
-    
-    
-                    <!-- <section class="menu-section section-padding" id="section_3">
+
+
+        <!-- <section class="menu-section section-padding" id="section_3">
                         <div class="container">
                             <div class="row">
     
@@ -387,8 +388,8 @@
                             </div>
                         </div>
                     </section> -->
-    
-<!--     
+
+        <!--     
                     <section class="reviews-section section-padding section-bg" id="section_4">
                         <div class="container">
                             <div class="row justify-content-center">
@@ -497,8 +498,8 @@
                             </div>
                         </div>
                     </section> -->
-    
-<!--     
+
+        <!--     
                     <section class="contact-section section-padding" id="section_5">
                         <div class="container">
                             <div class="row">   
@@ -546,9 +547,9 @@
                             </div>
                         </div>
                     </section> -->
-    
-    
-                    <!-- <footer class="site-footer">
+
+
+        <!-- <footer class="site-footer">
                         <div class="container">
                             <div class="row">
     
@@ -634,25 +635,18 @@
                     </footer> -->
 
 
-                </main>
-    
-            <!-- JAVASCRIPT FILES -->
-            <script src="js/jquery.min.js"></script>
+    </main>
+
+    <!-- JAVASCRIPT FILES -->
+    <!-- <script src="js/jquery.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
             <script src="js/jquery.sticky.js"></script>
             <script src="js/click-scroll.js"></script>
             <script src="js/vegas.min.js"></script>
-            <script src="js/custom.js"></script>
+            <script src="js/custom.js"></script> -->
 
 
-
-
-
-    
-    
-    
-    
-    
-        <?php include 'include/footer.php'; ?>
+    <?php include 'include/footer.php'; ?>
 </body>
+
 </html>
