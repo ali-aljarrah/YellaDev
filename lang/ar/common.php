@@ -1,7 +1,7 @@
 <?php 
 
 return [
-    "yellaDev" => "يلا ديف",
+    "yellaDev" => "YellaDev",
     "arabic" => "العربية",
     "english" => "الإنكليزية",
     "home" => "الرئيسية",
