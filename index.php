@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in" style="transition: 1000ms;">
-                    <div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(/assets/imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg); background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;">
+                    <div class="vegas-slide-inner vegas-animation-kenburns" style="background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;">
                     </div>
                 </div>
                 <div class="vegas-content-scrollable">
