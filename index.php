@@ -105,9 +105,9 @@
                             </video>
 
                             <div class="about-video-info d-flex flex-column">
-                                <h4 class="mt-auto">We Started Since 2009.</h4>
+                                <h4 class="mt-auto">We Started Since 2025.</h4>
 
-                                <h4>Best Cafe in Klang.</h4>
+                                <h4>Best Company in Syria.</h4>
                             </div>
                         </div>
                     </div>
