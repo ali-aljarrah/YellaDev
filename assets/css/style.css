@@ -1,5 +1,5 @@
 body {
-    /* padding-top: 90px; */
+    padding-top: 90px;
     min-height: 100vh;
     background-color: #000000;
 }
@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb:hover {
 hero animation
 */
 .vegas-animation-kenburns{
-background-image: url(imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
+background-image: url(/assets/imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
 background-color: rgba(0, 0, 0, 0);
 background-position: center center;
 background-size: cover;
@@ -1021,8 +1021,8 @@ https://www.tooplate.com/view/2137-barista-cafe
   -----------------------------------------*/
   .site-footer {
     background-color: var(--primary-color);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
   .site-footer strong {

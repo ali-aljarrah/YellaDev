@@ -2,7 +2,7 @@
 <title><?php getContent("yellaDev", "common"); ?> - <?php getContent("home", "common"); ?></title>
 </head>
 
-<body>
+<body class="pt-0">
 
     <?php include 'include/loader.php'; ?>
     <?php include 'include/menu.php'; ?>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in" style="transition: 1000ms;">
-                    <div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(&quot;imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg&quot;); background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;">
+                    <div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(/assets/imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg); background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;">
                     </div>
                 </div>
                 <div class="vegas-content-scrollable">
@@ -148,7 +148,7 @@
                             </div>
 
                             <div class="team-block-image-wrap">
-                                <img src="images/team/portrait-elegant-old-man-wearing-suit.jpg" class="team-block-image img-fluid" alt="">
+                                <img src="/assets/imgs/team/portrait-elegant-old-man-wearing-suit.jpg" class="team-block-image img-fluid" alt="">
                             </div>
                         </div>
                     </div>
@@ -166,7 +166,7 @@
                             </div>
 
                             <div class="team-block-image-wrap">
-                                <img src="images/team/cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg" class="team-block-image img-fluid" alt="">
+                                <img src="/assets/imgs/team/cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg" class="team-block-image img-fluid" alt="">
                             </div>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                             </div>
 
                             <div class="team-block-image-wrap">
-                                <img src="images/team/small-business-owner-drinking-coffee.jpg" class="team-block-image img-fluid" alt="">
+                                <img src="/assets/imgs/team/small-business-owner-drinking-coffee.jpg" class="team-block-image img-fluid" alt="">
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                             </div>
 
                             <div class="team-block-image-wrap">
-                                <img src="images/team/smiley-business-woman-working-cashier.jpg" class="team-block-image img-fluid" alt="">
+                                <img src="/assets/imgs/team/smiley-business-woman-working-cashier.jpg" class="team-block-image img-fluid" alt="">
                             </div>
                         </div>
                     </div>
@@ -405,7 +405,7 @@
                             <div class="timeline-content">
                                 <div class="reviews-block">
                                     <div class="reviews-block-image-wrap d-flex align-items-center">
-                                        <img src="images/reviews/young-woman-with-round-glasses-yellow-sweater.jpg" class="reviews-block-image img-fluid" alt="">
+                                        <img src="/assets/imgs/reviews/young-woman-with-round-glasses-yellow-sweater.jpg" class="reviews-block-image img-fluid" alt="">
 
                                         <div class="">
                                             <h6 class="text-white mb-0">Sandra</h6>
@@ -436,7 +436,7 @@
                             <div class="timeline-content">
                                 <div class="reviews-block">
                                     <div class="reviews-block-image-wrap d-flex align-items-center">
-                                        <img src="images/reviews/senior-man-white-sweater-eyeglasses.jpg" class="reviews-block-image img-fluid" alt="">
+                                        <img src="/assets/imgs/reviews/senior-man-white-sweater-eyeglasses.jpg" class="reviews-block-image img-fluid" alt="">
 
                                         <div class="">
                                             <h6 class="text-white mb-0">Don</h6>
@@ -467,7 +467,7 @@
                             <div class="timeline-content">
                                 <div class="reviews-block">
                                     <div class="reviews-block-image-wrap d-flex align-items-center">
-                                        <img src="images/reviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg" class="reviews-block-image img-fluid" alt="">
+                                        <img src="/assets/imgs/reviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg" class="reviews-block-image img-fluid" alt="">
 
                                         <div class="">
                                             <h6 class="text-white mb-0">Olivia</h6>
@@ -498,58 +498,6 @@
                 </div>
             </div>
         </section>
-
-
-        <section class="contact-section section-padding" id="section_5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12">
-                        <em class="text-white">Say Hello</em>
-                        <h2 class="text-white mb-4 pb-lg-2">Contact</h2>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-                        <form action="#" method="post" class="custom-form contact-form" role="form">
-
-                            <div class="row">
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
-
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Jackson" required="">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="email" class="form-label">Email Address</label>
-
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jack@gmail.com" required="">
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="message" class="form-label">How can we help?</label>
-
-                                    <textarea name="message" rows="4" class="form-control" id="message" placeholder="Message" required=""></textarea>
-
-                                </div>
-                            </div>
-
-                            <div class="col-lg-5 col-12 mx-auto mt-3">
-                                <button type="submit" class="form-control">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
-                        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        
 
 
     </main>

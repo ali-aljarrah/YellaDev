@@ -9,5 +9,7 @@ return [
     "services" => "الخدمات",
     "projects" => "المشاريع",
     "contact" => "تواصل",
+    "privacy_policy" => "سياسة الخصوصية",
+    "terms_and_conditions" => "الشروط والأحكام",
     "copyright" => "حقوق الملكية"
 ];
