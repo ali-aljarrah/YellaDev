@@ -17,6 +17,11 @@ if ($lang == 'ar') {
     $dir = "ltr";
 }
 
+// Generate and store CSRF token
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
 
 ?>
 
@@ -112,3 +117,4 @@ if ($lang == 'ar') {
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/vegas.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">

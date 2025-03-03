@@ -8,7 +8,7 @@
             </div>
 
             <div class="col-lg-6 col-12">
-                <form action="#" method="post" class="custom-form contact-form" role="form">
+                <form id="contactForm" class="custom-form contact-form" role="form">
 
                     <div class="row">
 
@@ -30,16 +30,26 @@
                             <textarea name="message" rows="4" class="form-control" id="message" placeholder="Message" required=""></textarea>
 
                         </div>
+
+                        <!-- Hidden input for reCAPTCHA token -->
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                        <input type="hidden" name="hb" value="">
+
+                        <div class="col-lg-12">
+                            <!-- Display response message -->
+                            <div id="responseMessage"></div>
+                        </div>
                     </div>
 
                     <div class="col-lg-5 col-12 mx-auto mt-3">
-                        <button type="submit" class="form-control">Send Message</button>
+                        <button id="contactBtn" type="submit" class="form-control">Send Message</button>
                     </div>
                 </form>
             </div>
 
             <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
-                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </div>
 
         </div>
@@ -125,5 +135,77 @@
         </div>
 </footer>
 
+ <!-- JAVASCRIPT FILES -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.sticky.js" defer></script>
+<script src="/assets/js/click-scroll.js" defer></script>
+<script src="/assets/js/vegas.min.js" defer></script>
+<script src="/assets/js/custom.js" defer></script>
 <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Execute reCAPTCHA v3 on form submission
+        $('#contactForm').on('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            $("#contactBtn").prop("disabled", true);
+
+            if($('#name').val().trim() === '') {
+                toastr.error('Please enter your full name.');
+                $("#contactBtn").prop("disabled", false);
+                return;
+            }
+
+            var email = $('#email').val().trim();
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if(email === '') {
+                toastr.error('Please enter your email.');
+                $("#contactBtn").prop("disabled", false);
+                return;
+            }
+
+            if (!emailPattern.test(email)) {
+                toastr.error('Please enter a valid email address.');
+                $("#contactBtn").prop("disabled", false);
+                return;
+            }
+
+            if($('#message').val().trim() === '') {
+                toastr.error('Please enter your message.');
+                $("#contactBtn").prop("disabled", false);
+                return;
+            }
+
+            // Execute reCAPTCHA and get the token
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', { action: 'submit' }).then(function(token) {
+                    // Add the token to the hidden input
+                    $('#g-recaptcha-response').val(token);
+
+                    // Serialize form data
+                    var formData = $('#contactForm').serialize();
+
+                    // Send AJAX request
+                    $.ajax({
+                        url: '/helper/mail.php',
+                        type: 'POST',
+                        data: formData,
+                        success: function(response) {
+                            $("#contactBtn").prop("disabled", false);
+                            toastr.success('Thank you for contacting us! We will get back to you soon.');
+                            $('#contactForm')[0].reset(); // Reset the form
+                        },
+                        error: function(xhr, status, error) {
+                            $("#contactBtn").prop("disabled", false);
+                            toastr.error('Oops! Something went wrong. Please try again.');
+                        }
+                    });
+                });
+            });
+        });
+    });
+</script>
