@@ -23,12 +23,20 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
+/* 
 #site-nav {
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
+} */
+
+#site-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  box-shadow: rgb(255 255 255 / 0%) 0px 13px 27px -5px, rgb(0 0 0 / 0%) 0px 8px 16px -8px;
 }
 
 #navbarNav .nav-link{
@@ -51,13 +59,13 @@ body::-webkit-scrollbar-thumb:hover {
 /* 
 hero animation
 */
-.vegas-animation-kenburns{
-background-image: url(/assets/imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
+/* .vegas-animation-kenburns{
+background-image: url(/assets/imgs/slide1.jpg);
 background-color: rgba(0, 0, 0, 0);
 background-position: center center;
 background-size: cover;
 animation-duration: 5000ms;
-}
+} */
 
 
 
@@ -77,10 +85,10 @@ https://www.tooplate.com/view/2137-barista-cafe
     --primary-color:                #BC6C25;
     --secondary-color:              #DDA15E;
     --section-bg-color:             #b78752;
-    --custom-btn-bg-color:          #BC6C25;
+    --custom-btn-bg-color:          #b48b48;
     --custom-btn-bg-hover-color:    #DDA15E;
     --dark-color:                   #000000;
-    --p-color:                      #717275;
+    --silver-color:                 #bcc1c1;
     --border-color:                 #7fffd4;
     --link-hover-color:             #E76F51;
   
@@ -400,10 +408,10 @@ https://www.tooplate.com/view/2137-barista-cafe
   }
   
   .navbar .container {
-    background: #0c0c0c;
+    background: rgb(0 0 0);
     border-radius: var(--border-radius-medium);
     padding: 15px 30px;
-  }
+}
   
   .navbar-brand,
   .navbar-brand:hover {
@@ -435,7 +443,7 @@ https://www.tooplate.com/view/2137-barista-cafe
   
   .navbar-nav .nav-link {
     display: inline-block;
-    color: var(--white-color);
+    color: #bcc1c1 !important;
     font-size: var(--menu-font-size);
     font-weight: var(--font-weight-bold);
     padding-top: 15px;
@@ -612,7 +620,7 @@ https://www.tooplate.com/view/2137-barista-cafe
   }
   
   .hero-section h1 {
-    color: var(--white-color);
+    color: #bcc1c1;
   }
   
   .small-text {

@@ -8,15 +8,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <?php 
-      $menuClass = "me-lg-auto";
-      if($lang == "ar") {
-        $menuClass = "ms-lg-auto";
-      }
-    ?>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav <?php echo $menuClass; ?>">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link menu-link text-white active" id="home-link" href="/"><?php getContent("home", "common"); ?></a>
         </li>
