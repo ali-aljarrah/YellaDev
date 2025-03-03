@@ -113,13 +113,11 @@
                     </div>
 
                     <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
-                        <em class="text-white">About Us</em>
+                        <em class="text-white"><?php getContent("about", "common"); ?></em>
 
-                        <h2 class="text-white mb-3">YELLADEV</h2>
+                        <h2 class="text-white mb-3"><?php getContent("yellaDev", "common"); ?></h2>
 
-                        <p class="text-white">YellaDev is a team of passionate designers and developers dedicated to helping businesses thrive in the digital world. With years of experience, we combine creativity and technical expertise to deliver websites that not only look great but also perform exceptionally.</p>
-
-                        <!-- <p class="text-white">The café was run by a friendly and hospitable couple, Mr. and Mrs. Johnson. Barista Cafe is free Bootstrap 5 HTML layout provided by <a rel="nofollow" href="https://www.tooplate.com" target="_blank">Tooplate</a>.</p> -->
+                        <p class="text-white"><?php getContent("yellaDev_is_a_team", "about"); ?></p>
 
                         <a href="#barista-team" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4">Meet Baristas</a>
                     </div>
