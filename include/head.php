@@ -1,5 +1,6 @@
 <?php
 
+include 'helper/constant.php';
 include 'helper/index.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -21,7 +22,6 @@ if ($lang == 'ar') {
 if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
-
 
 ?>
 
@@ -117,4 +117,4 @@ if (empty($_SESSION['csrf_token'])) {
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/vegas.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <link href="/assets/css/toastr.min.css" rel="stylesheet">

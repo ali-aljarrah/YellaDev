@@ -8,7 +8,7 @@ return [
     "about" => "About",
     "services" => "Services",
     "projects" => "Projects",
-    "contact" => "Contact",
+    "contact" => "Contact us",
     "privacy_policy" => "Privacy Policy",
     "terms_and_conditions" => "Terms and Conditions",
     "copyright" => "Copyright"

@@ -3,8 +3,8 @@
         <div class="row">
 
             <div class="col-lg-12 col-12">
-                <em class="text-white">Say Hello</em>
-                <h2 class="text-white mb-4 pb-lg-2">Contact</h2>
+                <em class="text-white"><?php getContent("say_hello", "contact"); ?></em>
+                <h2 class="text-white mb-4 pb-lg-2"><?php getContent("contact", "common"); ?></h2>
             </div>
 
             <div class="col-lg-6 col-12">
@@ -13,19 +13,19 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-12">
-                            <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+                            <label for="name" class="form-label"><?php getContent("name", "contact"); ?> <sup class="text-danger">*</sup></label>
 
                             <input type="text" name="name" id="name" class="form-control" placeholder="Jackson" required="">
                         </div>
 
                         <div class="col-lg-6 col-12">
-                            <label for="email" class="form-label">Email Address</label>
+                            <label for="email" class="form-label"><?php getContent("email", "contact"); ?></label>
 
                             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jack@gmail.com" required="">
                         </div>
 
                         <div class="col-12">
-                            <label for="message" class="form-label">How can we help?</label>
+                            <label for="message" class="form-label"><?php getContent("how_can_we_help", "contact"); ?></label>
 
                             <textarea name="message" rows="4" class="form-control" id="message" placeholder="Message" required=""></textarea>
 
@@ -35,21 +35,16 @@
                         <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         <input type="hidden" name="hb" value="">
-
-                        <div class="col-lg-12">
-                            <!-- Display response message -->
-                            <div id="responseMessage"></div>
-                        </div>
                     </div>
 
                     <div class="col-lg-5 col-12 mx-auto mt-3">
-                        <button id="contactBtn" type="submit" class="form-control">Send Message</button>
+                        <button id="contactBtn" type="submit" class="form-control"><?php getContent("send_message", "contact"); ?></button>
                     </div>
                 </form>
             </div>
 
             <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
-                <!-- <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6652.750346403488!2d36.287702691960384!3d33.51763002549413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e703bd037f1d%3A0xe8bcdc5c749e2648!2z2KfZhNi02LnZhNin2YY!5e0!3m2!1sen!2s!4v1742981048859!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
@@ -138,13 +133,13 @@
  <!-- JAVASCRIPT FILES -->
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/jquery.sticky.js" defer></script>
-<script src="/assets/js/click-scroll.js" defer></script>
+<!-- <script src="/assets/js/click-scroll.js" defer></script> -->
 <script src="/assets/js/vegas.min.js" defer></script>
 <script src="/assets/js/custom.js" defer></script>
 <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
+<script src="/assets/js/toastr.min.js"defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="https://www.google.com/recaptcha/api.js?render=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script>
     $(document).ready(function() {
         // Execute reCAPTCHA v3 on form submission
@@ -154,7 +149,7 @@
             $("#contactBtn").prop("disabled", true);
 
             if($('#name').val().trim() === '') {
-                toastr.error('Please enter your full name.');
+                toastr.error("<?php echo getContent("error_name", "contact"); ?>");
                 $("#contactBtn").prop("disabled", false);
                 return;
             }
@@ -163,26 +158,26 @@
             var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if(email === '') {
-                toastr.error('Please enter your email.');
+                toastr.error("<?php echo getContent("error_email", "contact"); ?>");
                 $("#contactBtn").prop("disabled", false);
                 return;
             }
 
             if (!emailPattern.test(email)) {
-                toastr.error('Please enter a valid email address.');
+                toastr.error("<?php echo getContent("error_email", "contact"); ?>");
                 $("#contactBtn").prop("disabled", false);
                 return;
             }
 
             if($('#message').val().trim() === '') {
-                toastr.error('Please enter your message.');
+                toastr.error("<?php echo getContent("error_message", "contact"); ?>");
                 $("#contactBtn").prop("disabled", false);
                 return;
             }
 
             // Execute reCAPTCHA and get the token
             grecaptcha.ready(function() {
-                grecaptcha.execute('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', { action: 'submit' }).then(function(token) {
+                grecaptcha.execute("<?php echo captcha_siteKey ?>", { action: 'submit' }).then(function(token) {
                     // Add the token to the hidden input
                     $('#g-recaptcha-response').val(token);
 
@@ -195,13 +190,34 @@
                         type: 'POST',
                         data: formData,
                         success: function(response) {
+                            var response = JSON.parse(response);
                             $("#contactBtn").prop("disabled", false);
-                            toastr.success('Thank you for contacting us! We will get back to you soon.');
+
+                            if (response.error) {
+                                if (response.message == "name") {
+                                    toastr.error("<?php echo getContent("error_name", "contact"); ?>");
+                                    return;
+                                }
+                                if (response.message == "email") {
+                                    toastr.error("<?php echo getContent("error_email", "contact"); ?>");
+                                    return;
+                                }
+                                if (response.message == "message") {
+                                    toastr.error("<?php echo getContent("error_message", "contact"); ?>");
+                                    return;
+                                }
+
+                                toastr.error("<?php echo getContent("error_general", "contact"); ?>");
+                                return;
+                            }
+
+                            toastr.success("<?php echo getContent("success_message", "contact"); ?>");
                             $('#contactForm')[0].reset(); // Reset the form
                         },
                         error: function(xhr, status, error) {
+                            console.log(response)
                             $("#contactBtn").prop("disabled", false);
-                            toastr.error('Oops! Something went wrong. Please try again.');
+                            toastr.error("<?php echo getContent("error_general", "contact"); ?>");
                         }
                     });
                 });

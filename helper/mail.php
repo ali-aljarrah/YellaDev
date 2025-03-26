@@ -1,12 +1,12 @@
 <?php
 // Load Composer's autoloader (if using Composer)
 require '../vendor/autoload.php';
+include '../helper/constant.php';
+require "../helper/index.php";
 
 // Import PHPMailer classes
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $captcha = $_POST['g-recaptcha-response']; // reCAPTCHA token
 
     // Validate reCAPTCHA v3
-    $secretKey = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"; // Replace with your reCAPTCHA secret key
+    $secretKey = captcha_secretKey;
     $url = "https://www.google.com/recaptcha/api/siteverify";
     $data = [
         'secret' => $secretKey,
@@ -51,9 +51,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = filter_var($email, FILTER_SANITIZE_EMAIL);
         $message = htmlspecialchars(strip_tags(trim($message)));
 
+        // Validate name
+        if(empty($name)) {
+            echo json_encode([
+                'error' => true,
+                'message' => 'name'
+            ]);
+            exit;
+        }
+
         // Validate email
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            http_response_code(400); 
+            echo json_encode([
+                'error' => true,
+                'message' => 'email'
+            ]);
+            exit;
+        }
+
+         // Validate message
+        if(empty($message)) {
+            echo json_encode([
+                'error' => true,
+                'message' => 'message'
+            ]);
             exit;
         }
 
@@ -88,7 +109,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Send the email
             $mail->send();
-            http_response_code(200); 
+
+            echo json_encode([
+                'error' => false,
+            ]);
             exit;
         } catch (Exception $e) {
             http_response_code(400); 

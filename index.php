@@ -7,46 +7,10 @@
     <?php include 'include/loader.php'; ?>
     <?php include 'include/menu.php'; ?>
 
-
-    <!-- <div class="container my-5">
-        <div class="row">
-            <div class="col-lg-12 mb-4 mb-lg-0">
-                <h1 class="mb-3"><?php getContent("where_innovation", "home"); ?></h1>
-                <p>
-                    <?php getContent("we_dont_just_build_websites", "home"); ?>
-                </p>
-                <p>
-                    <?php getContent("our_experties_lies", "home"); ?>
-                </p>
-                <div class="my-4">
-                    <h2 class="mb-3">
-                        <?php getContent("what_sets_us", "home"); ?>
-                    </h2>
-                    <ul>
-                        <li><?php getContent("seo_friendly", "home"); ?></li>
-                        <li><?php getContent("blazing_fase", "home"); ?></li>
-                        <li><?php getContent("mobile_first", "home"); ?></li>
-                        <li><?php getContent("end_to_end", "home"); ?></li>
-                    </ul>
-                </div>
-                <div class="mb-5">
-                    <h3 class="mb-3"><?php getContent("technologies_we_use", "home"); ?></h3>
-                    <p>
-                        <?php getContent("we_leverage_cutting", "home"); ?>
-                    </p>
-                </div>
-                <p>
-                    <?php getContent("lets_transform_your_vision", "home"); ?>
-                </p>
-            </div>
-        </div>
-    </div> -->
-
-
     <main>
     <!-- section 1  -->
 
-        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+        <section class="hero-section d-flex justify-content-center align-items-center">
 
             <div class="container">
                 <div class="row align-items-center">
@@ -59,12 +23,10 @@
                         <p class="text-white mb-4 pb-lg-2">
                             <?php getContent("where_innovation", "home"); ?>
                         </p>
-
-                        <a class="btn custom-btn custom-border-btn smoothscroll me-3" href="#section_2">
-                            Our Story
-                        </a>
-
-                        <a class="btn custom-btn smoothscroll me-2 mb-2" href="#section_3"><strong>Check Menu</strong></a>
+                    
+                        <p class="text-white mb-4 pb-lg-2">
+                            <?php getContent("we_dont_just_build_websites", "home"); ?>
+                        </p>
                     </div>
 
                 </div>
@@ -91,7 +53,7 @@
 
         <!-- section 2  -->
 
-        <section class="about-section section-padding" id="section_2">
+        <section class="about-section section-padding">
             <div class="section-overlay"></div>
             <div class="container">
                 <div class="row align-items-center">
@@ -105,9 +67,7 @@
                             </video>
 
                             <div class="about-video-info d-flex flex-column">
-                                <h4 class="mt-auto">We Started Since 2025.</h4>
-
-                                <h4>Best Company in Syria.</h4>
+                                <h2 class="mt-auto"><?php getContent("we_started", "home") ?></h4>
                             </div>
                         </div>
                     </div>
@@ -118,8 +78,9 @@
                         <h2 class="text-white mb-3"><?php getContent("yellaDev", "common"); ?></h2>
 
                         <p class="text-white"><?php getContent("yellaDev_is_a_team", "about"); ?></p>
+                        <p class="text-white"><?php getContent("our_experties_lies", "home"); ?></p>
 
-                        <a href="#barista-team" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4">Meet Baristas</a>
+                        <a href="/about" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4"><?php getContent("about", "common"); ?></a>
                     </div>
 
                 </div>
@@ -127,272 +88,85 @@
         </section>
 
 
-        <section class="barista-section section-padding section-bg" id="barista-team">
+        <section class="barista-section section-padding section-bg">
             <div class="container">
                 <div class="row justify-content-center">
 
                     <div class="col-lg-12 col-12 text-center mb-4 pb-lg-2">
-                        <em class="text-white">Creative Baristas</em>
-
-                        <h2 class="text-white">Meet People</h2>
+                        <h2 class="text-white"><?php getContent("what_sets_us", "home"); ?></h2>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4">
-                        <div class="team-block-wrap">
-                            <div class="team-block-info d-flex flex-column">
-                                <div class="d-flex mt-auto mb-3">
-                                    <h4 class="text-white mb-0">Steve</h4>
-
-                                    <p class="badge ms-4"><em>Boss</em></p>
-                                </div>
-
-                                <p class="text-white mb-0">your favourite coffee daily lives tempor.</p>
-                            </div>
-
-                            <div class="team-block-image-wrap">
-                                <img src="/assets/imgs/team/portrait-elegant-old-man-wearing-suit.jpg" class="team-block-image img-fluid" alt="">
-                            </div>
+                        <div class="team-block-wrap h-100 p-4 text-center text-white h-100 p-4 text-center text-white">
+                            <p>
+                            <?php getContent("seo_friendly", "home"); ?>
+                            </p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4">
-                        <div class="team-block-wrap">
-                            <div class="team-block-info d-flex flex-column">
-                                <div class="d-flex mt-auto mb-3">
-                                    <h4 class="text-white mb-0">Sandra</h4>
-
-                                    <p class="badge ms-4"><em>Manager</em></p>
-                                </div>
-
-                                <p class="text-white mb-0">your favourite coffee daily lives.</p>
-                            </div>
-
-                            <div class="team-block-image-wrap">
-                                <img src="/assets/imgs/team/cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg" class="team-block-image img-fluid" alt="">
-                            </div>
+                        <div class="team-block-wrap h-100 p-4 text-center text-white">
+                            <p>
+                            <?php getContent("blazing_fase", "home"); ?>
+                            </p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4">
-                        <div class="team-block-wrap">
-                            <div class="team-block-info d-flex flex-column">
-                                <div class="d-flex mt-auto mb-3">
-                                    <h4 class="text-white mb-0">Jackson</h4>
-
-                                    <p class="badge ms-4"><em>Senior</em></p>
-                                </div>
-
-                                <p class="text-white mb-0">your favourite coffee daily lives.</p>
-                            </div>
-
-                            <div class="team-block-image-wrap">
-                                <img src="/assets/imgs/team/small-business-owner-drinking-coffee.jpg" class="team-block-image img-fluid" alt="">
-                            </div>
+                        <div class="team-block-wrap h-100 p-4 text-center text-white">
+                            <p>
+                            <?php getContent("mobile_first", "home"); ?>
+                            </p>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="team-block-wrap">
-                            <div class="team-block-info d-flex flex-column">
-                                <div class="d-flex mt-auto mb-3">
-                                    <h4 class="text-white mb-0">Michelle</h4>
-
-                                    <p class="badge ms-4"><em>Barista</em></p>
-                                </div>
-
-                                <p class="text-white mb-0">your favourite coffee daily consectetur.</p>
-                            </div>
-
-                            <div class="team-block-image-wrap">
-                                <img src="/assets/imgs/team/smiley-business-woman-working-cashier.jpg" class="team-block-image img-fluid" alt="">
-                            </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
+                        <div class="team-block-wrap h-100 p-4 text-center text-white">
+                            <p>
+                            <?php getContent("end_to_end", "home"); ?>
+                            </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
 
-        <section class="menu-section section-padding" id="section_3">
+        <section class="menu-section section-padding">
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                    <div class="col-lg-12 mb-4 mb-lg-0">
                         <div class="menu-block-wrap">
-                            <div class="text-center mb-4 pb-lg-2">
-                                <em class="text-white">Delicious Menu</em>
-                                <h4 class="text-white">Breakfast</h4>
+                            <div class="text-center mb-5 pb-lg-2">
+                                <h2 class="text-white"><?php getContent("technologies_we_use", "home"); ?></h2>
                             </div>
 
-                            <div class="menu-block">
-                                <div class="d-flex">
-                                    <h6>Pancakes</h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="ms-auto">$12.50</strong>
+                            <div class="menu-block text-center">
+                                <div>
+                                    <h6><?php getContent("we_leverage_cutting", "home"); ?></h6>
                                 </div>
 
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Fresh brewed coffee and steamed milk</small>
-                                </div>
+                                <div class="border-top mt-3 pt-2"></div>
                             </div>
 
-                            <div class="menu-block my-4">
-                                <div class="d-flex">
-                                    <h6>
-                                        Toasted Waffle
-                                    </h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="text-white ms-auto"><del>$16.50</del></strong>
-
-                                    <strong class="ms-2">$12.00</strong>
+                            <div class="menu-block my-5 text-center">
+                                <div>
+                                <h6><?php getContent("lets_transform_your_vision", "home"); ?></h6>
                                 </div>
 
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Brewed coffee and steamed milk</small>
-                                </div>
+                                <div class="border-top mt-3 pt-2"></div>
                             </div>
 
-                            <div class="menu-block">
-                                <div class="d-flex">
-                                    <h6>Fried Chips
-                                        <span class="badge ms-3">Recommend</span>
-                                    </h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="ms-auto">$15.0</strong>
-                                </div>
-
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Rich Milk and Foam</small>
-                                </div>
-                            </div>
-
-                            <div class="menu-block my-4">
-                                <div class="d-flex">
-                                    <h6>Pancakes</h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="ms-auto">$12.50</strong>
-                                </div>
-
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Fresh brewed coffee and steamed milk</small>
-                                </div>
-                            </div>
-
-                            <div class="menu-block">
-                                <div class="d-flex">
-                                    <h6>Banana Cakes</h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="ms-auto">$18.0</strong>
-                                </div>
-
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Rich Milk and Foam</small>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-12">
-                        <div class="menu-block-wrap">
-                            <div class="text-center mb-4 pb-lg-2">
-                                <em class="text-white">Favourite Menu</em>
-                                <h4 class="text-white">Coffee</h4>
-                            </div>
-
-                            <div class="menu-block">
-                                <div class="d-flex">
-                                    <h6>Latte</h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="text-white ms-auto"><del>$12.50</del></strong>
-
-                                    <strong class="ms-2">$7.50</strong>
-                                </div>
-
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Fresh brewed coffee and steamed milk</small>
-                                </div>
-                            </div>
-
-                            <div class="menu-block my-4">
-                                <div class="d-flex">
-                                    <h6>
-                                        White Coffee
-                                        <span class="badge ms-3">Recommend</span>
-                                    </h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="ms-auto">$5.90</strong>
-                                </div>
-
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Brewed coffee and steamed milk</small>
-                                </div>
-                            </div>
-
-                            <div class="menu-block">
-                                <div class="d-flex">
-                                    <h6>Chocolate Milk</h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="ms-auto">$5.50</strong>
-                                </div>
-
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Rich Milk and Foam</small>
-                                </div>
-                            </div>
-
-                            <div class="menu-block my-4">
-                                <div class="d-flex">
-                                    <h6>Greentea</h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="ms-auto">$7.50</strong>
-                                </div>
-
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Fresh brewed coffee and steamed milk</small>
-                                </div>
-                            </div>
-
-                            <div class="menu-block">
-                                <div class="d-flex">
-                                    <h6>Dark Chocolate</h6>
-
-                                    <span class="underline"></span>
-
-                                    <strong class="ms-auto">$7.25</strong>
-                                </div>
-
-                                <div class="border-top mt-2 pt-2">
-                                    <small>Rich Milk and Foam</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
         </section>
 
-
-        <section class="reviews-section section-padding section-bg" id="section_4">
+        <!-- <section class="reviews-section section-padding section-bg">
             <div class="container">
                 <div class="row justify-content-center">
 
@@ -499,9 +273,7 @@
 
                 </div>
             </div>
-        </section>
-
-
+        </section> -->
     </main>
 
    

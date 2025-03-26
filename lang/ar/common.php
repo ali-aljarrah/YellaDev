@@ -8,7 +8,7 @@ return [
     "about" => "من نحن",
     "services" => "الخدمات",
     "projects" => "المشاريع",
-    "contact" => "تواصل",
+    "contact" => "اتصل بنا",
     "privacy_policy" => "سياسة الخصوصية",
     "terms_and_conditions" => "الشروط والأحكام",
     "copyright" => "حقوق الملكية"

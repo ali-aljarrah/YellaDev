@@ -14,24 +14,24 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("LangForm").submit();
   });
 
-  var url = window.location.pathname;
+  // var url = window.location.pathname;
 
-  if (url == "/") {
-    removeActiveFromMenuLinks();
-    document.getElementById("home-link").classList.add("active");
-  } else if (url == "/services") {
-    removeActiveFromMenuLinks();
-    document.getElementById("services-link").classList.add("active");
-  } else if (url == "/projects") {
-    removeActiveFromMenuLinks();
-    document.getElementById("projects-link").classList.add("active");
-  } else if (url == "/about") {
-    removeActiveFromMenuLinks();
-    document.getElementById("about-link").classList.add("active");
-  } else if (url == "/contact") {
-    removeActiveFromMenuLinks();
-    document.getElementById("contact-link").classList.add("active");
-  }
+  // if (url == "/") {
+  //   removeActiveFromMenuLinks();
+  //   document.getElementById("home-link").classList.add("active");
+  // } else if (url == "/services") {
+  //   removeActiveFromMenuLinks();
+  //   document.getElementById("services-link").classList.add("active");
+  // } else if (url == "/projects") {
+  //   removeActiveFromMenuLinks();
+  //   document.getElementById("projects-link").classList.add("active");
+  // } else if (url == "/about") {
+  //   removeActiveFromMenuLinks();
+  //   document.getElementById("about-link").classList.add("active");
+  // } else if (url == "/contact") {
+  //   removeActiveFromMenuLinks();
+  //   document.getElementById("contact-link").classList.add("active");
+  // }
 });
 
 function removeActiveFromMenuLinks() {

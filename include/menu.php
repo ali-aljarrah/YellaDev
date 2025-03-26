@@ -12,23 +12,23 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link menu-link text-white active" id="home-link" href="/"><?php getContent("home", "common"); ?></a>
+          <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/") { echo "active"; } ?>" id="home-link" href="/"><?php getContent("home", "common"); ?></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/services") { echo "active"; } ?>" id="services-link" href="/services"><?php getContent("services", "common"); ?></a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link menu-link text-white" id="services-link" href="/services"><?php getContent("services", "common"); ?></a>
+          <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/projects") { echo "active"; } ?>" id="projects-link" href="/projects"><?php getContent("projects", "common"); ?></a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link menu-link text-white" id="projects-link" href="/projects"><?php getContent("projects", "common"); ?></a>
+          <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/about") { echo "active"; } ?>" id="about-link" href="/about"><?php getContent("about", "common"); ?></a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link menu-link text-white" id="about-link" href="/about"><?php getContent("about", "common"); ?></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link menu-link text-white" id="contact-link" href="/contact"><?php getContent("contact", "common"); ?></a>
+          <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/contact") { echo "active"; } ?>" id="contact-link" href="/contact"><?php getContent("contact", "common"); ?></a>
         </li>
       </ul>
     </div>
