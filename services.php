@@ -7,10 +7,10 @@
     <?php include 'include/menu.php'; ?>
 
     <main>
-        <section class="pages-hero-section d-flex justify-content-center align-items-center">
+        <section class="pages-hero-section d-flex justify-content-center align-items-center pt-180">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 text-center mx-auto">
+                    <div class="col-lg-10 text-center mx-auto">
                         <h1 class="mb-3 text"><?php getContent("our_services_designed", "services"); ?></h1>
                         <p class="text-white">
                             <?php getContent("at_yelladev_we_offer", "services"); ?>

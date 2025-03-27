@@ -906,6 +906,9 @@ strong {
     margin: auto 15px 0 15px;
   }
   
+  .pt-180 {
+    padding-top: 180px;
+  }
   
   /*---------------------------------------
 .hero-section {
@@ -1233,11 +1236,7 @@ strong {
     CONTACT               
   -----------------------------------------*/
 .contact-section {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.45),
-      rgba(188, 108, 37, 1)
-    );
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgb(200 170 101));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1361,7 +1360,7 @@ strong {
     SITE FOOTER              
   -----------------------------------------*/
 .site-footer {
-  background-color: var(--primary-color);
+  background-color: rgb(200 170 101);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1447,7 +1446,7 @@ strong {
 
 .pages-hero-section {
   height: 75vh;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(188, 108, 37, 1));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgb(200 170 101));
 }
 
 /*---------------------------------------

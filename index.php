@@ -8,7 +8,7 @@
     <?php include 'include/menu.php'; ?>
 
     <main>
-    <!-- section 1  -->
+        <!-- section 1  -->
 
         <section class="hero-section d-flex justify-content-center align-items-center">
 
@@ -23,7 +23,7 @@
                         <p class="text-white mb-4 pb-lg-2">
                             <?php getContent("where_innovation", "home"); ?>
                         </p>
-                    
+
                         <p class="text-white mb-4 pb-lg-2">
                             <?php getContent("we_dont_just_build_websites", "home"); ?>
                         </p>
@@ -92,39 +92,68 @@
             <div class="container">
                 <div class="row justify-content-center">
 
-                    <div class="col-lg-12 col-12 text-center mb-4 pb-lg-2">
-                        <h2 class="text-white"><?php getContent("what_sets_us", "home"); ?></h2>
+                    <div class="col-lg-12 text-center mb-4 pb-lg-2">
+
+                        <h2 class="text-white"><?php getContent("services", "common"); ?></h2>
+                        <h3 class="text-white"><?php getContent("what_sets_us", "home"); ?></h3>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 mb-4">
-                        <div class="team-block-wrap h-100 p-4 text-center text-white h-100 p-4 text-center text-white">
-                            <p>
-                            <?php getContent("seo_friendly", "home"); ?>
-                            </p>
+                    <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
+                        <div class="team-block-wrap h-100">
+                            <div class="team-block-info d-flex flex-column">
+                                <div class="d-flex mt-auto mb-3">
+                                    <p class="text-white mb-0"><?php getContent("seo_friendly", "home"); ?></p>
+                                </div>
+                            </div>
+
+                            <div class="team-block-image-wrap h-100">
+                                <img loading="lazy" src="/assets/imgs/team/seo.jpg" class="team-block-image img-fluid" alt="<?php getContent("seo_friendly", "home"); ?>">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 mb-4">
-                        <div class="team-block-wrap h-100 p-4 text-center text-white">
-                            <p>
-                            <?php getContent("blazing_fase", "home"); ?>
-                            </p>
+                    <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
+                        <div class="team-block-wrap h-100">
+                            <div class="team-block-info d-flex flex-column">
+                                <div class="d-flex mt-auto mb-3">
+                                    <p class="text-white mb-0"><?php getContent("blazing_fase", "home"); ?></p>
+                                </div>
+
+                            </div>
+
+                            <div class="team-block-image-wrap h-100">
+                                <img src="/assets/imgs/team/Hosting.png" class="team-block-image img-fluid" alt="">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 mb-4">
-                        <div class="team-block-wrap h-100 p-4 text-center text-white">
-                            <p>
-                            <?php getContent("mobile_first", "home"); ?>
-                            </p>
+                    <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
+                        <div class="team-block-wrap h-100">
+                            <div class="team-block-info d-flex flex-column">
+                                <div class="d-flex mt-auto mb-3">
+                                    <p class="text-white mb-0"><?php getContent("mobile_first", "home"); ?></p>
+                                </div>
+
+                            </div>
+
+                            <div class="team-block-image-wrap h-100">
+                                <img src="/assets/imgs/team/ecomm.png" class="team-block-image img-fluid" alt="">
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-3 col-md-6 col-12 mb-4">
-                        <div class="team-block-wrap h-100 p-4 text-center text-white">
-                            <p>
-                            <?php getContent("end_to_end", "home"); ?>
-                            </p>
+
+                    <div class="col-lg-3 col-md-6 col-12 h-100">
+                        <div class="team-block-wrap h-100">
+                            <div class="team-block-info d-flex flex-column">
+                                <div class="d-flex mt-auto mb-3">
+                                    <p class="text-white mb-0"><?php getContent("end_to_end", "home"); ?></p>
+                                </div>
+
+                            </div>
+
+                            <div class="team-block-image-wrap h-100">
+                                <img src="/assets/imgs/team/web.png" class="team-block-image img-fluid" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,7 +181,7 @@
 
                             <div class="menu-block my-5 text-center">
                                 <div>
-                                <h6><?php getContent("lets_transform_your_vision", "home"); ?></h6>
+                                    <h6><?php getContent("lets_transform_your_vision", "home"); ?></h6>
                                 </div>
 
                                 <div class="border-top mt-3 pt-2"></div>
@@ -276,7 +305,7 @@
         </section> -->
     </main>
 
-   
+
 
 
     <?php include 'include/footer.php'; ?>

@@ -56,8 +56,8 @@
         <div class="row">
 
             <div class="col-lg-4 col-12 me-auto">
-                <a href="/" class="p-3 bg-dark rounded-4">
-                    <img width="183" height="61" class="img-fluid" loading="lazy" src="/assets/imgs/logo.webp" alt="YellaDev Site Logo footer">
+                <a href="/" class="p-3">
+                    <img width="183" height="61" class="img-fluid bg-dark rounded" loading="lazy" src="/assets/imgs/logo.webp" alt="YellaDev Site Logo footer">
                 </a>
             </div>
 
