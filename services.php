@@ -53,7 +53,7 @@ if ($lang == 'ar') {
             </div>
         </section>
 
-        <section class="reviews-section section-padding section-bg" id="section_4">
+        <section class="section-padding">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="timeline">
