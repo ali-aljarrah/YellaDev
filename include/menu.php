@@ -9,7 +9,7 @@
     </button>
 
 
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/") { echo "active"; } ?>" id="home-link" href="/"><?php getContent("home", "common"); ?></a>
@@ -30,20 +30,24 @@
         <li class="nav-item">
           <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/contact") { echo "active"; } ?>" id="contact-link" href="/contact"><?php getContent("contact", "common"); ?></a>
         </li>
+
+        <li class="d-flex flex-column justify-content-center mt-3 mt-lg-0">
+          <div>
+            <form id="LangForm" method="POST" action="">
+              <div class="dropdown">
+                <select class="form-select bg-secondary text-white border-0 w-fit" name="LangOption" id="LangOption">
+                  <option value="ar" <?php echo ($lang == "ar") ? "selected" : ""; ?>><?php getContent("arabic", "common"); ?></option>
+                  <option value="en" <?php echo ($lang == "en") ? "selected" : ""; ?>><?php getContent("english", "common"); ?></option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </li>
       </ul>
     </div>
 
 
-    <div>
-      <form id="LangForm" method="POST" action="">
-        <div class="dropdown">
-          <select class="form-select bg-secondary text-white border-0" name="LangOption" id="LangOption">
-            <option value="ar" <?php echo ($lang == "ar") ? "selected" : ""; ?>><?php getContent("arabic", "common"); ?></option>
-            <option value="en" <?php echo ($lang == "en") ? "selected" : ""; ?>><?php getContent("english", "common"); ?></option>
-          </select>
-        </div>
-      </form>
-    </div>
+   
 
   </div>
 </nav>

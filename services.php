@@ -1,4 +1,37 @@
-<?php include 'include/head.php'; ?>
+<?php 
+
+include 'include/head.php'; 
+
+if ($lang == 'ar') {
+    echo '
+        <style>
+            @media(min-width: 991px) {
+                .timeline-container-left {
+                    left: -50%;
+                }
+                .timeline-container-right {
+                    left: 0px;
+                }
+                .timeline-container-right::after {
+                    right: 98%;
+                }
+            }
+            @media(max-width: 991px) {
+                .timeline-container-left::before {
+                    right: auto;
+                }
+                .timeline-container::before {
+                    left: 52px;
+                }
+                .timeline-container-left::after, .timeline-container-right::after {
+                    left: 1%;
+                    right: auto;
+                }       
+            }
+        </style>
+    ';
+} 
+?>
 <title><?php getContent("yellaDev", "common"); ?> - <?php getContent("services", "common"); ?></title>
 </head>
 <body class="pt-0">
@@ -20,83 +53,114 @@
             </div>
         </section>
 
-        <section class="menu-section section-padding">
-            <div class="container my-5">
+        <section class="reviews-section section-padding section-bg" id="section_4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="timeline">
+                        <div class="timeline-container timeline-container-left">
+                            <div class="timeline-content">
+                                <div class="reviews-block">
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-1.webp);"></div>
 
-                <div class="row py-5 my-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <div class="mt-4">
-                            <p class="fw-bold mb-3 h3 text-white"><?php getContent("website_design", "services"); ?></p>
-                            <p class="text-white"><?php getContent("your_website_is_the", "services"); ?></p>
+                                    <div class="reviews-block-info">
+                                        <h2 class="fw-bold text-white h4"><?php getContent("website_design", "services"); ?></h2>
+                                        <p><?php getContent("your_website_is_the", "services"); ?></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <img class="img-fluid rounded" loading="lazy" width="477" height="318" src="/assets/imgs/services/services-1.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("website_design", "services"); ?>">
-                    </div>
-                </div>
 
-                <div class="row py-5 my-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-                        <img class="img-fluid rounded" loading="lazy" width="559" height="373" src="/assets/imgs/services/services-2.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("ecommerce_website", "services"); ?>">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="mt-4">
-                            <p class="fw-bold mb-3 h3 text-white"><?php getContent("ecommerce_website", "services"); ?></p>
-                            <p class="text-white"><?php getContent("ready_to_sell_online", "services"); ?></p>
+                        <div class="timeline-container timeline-container-right">
+                            <div class="timeline-content">
+                                <div class="reviews-block">
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-2.webp);"></div>
+
+                                    <div class="reviews-block-info">
+                                        <h3 class="fw-bold text-white h4"><?php getContent("ecommerce_website", "services"); ?></h3>
+                                        <p><?php getContent("ready_to_sell_online", "services"); ?></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="row py-5 my-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <div class="mt-4">
-                            <p class="fw-bold mb-3 h3 text-white"><?php getContent("brand_identity", "services"); ?></p>
-                            <p class="text-white"><?php getContent("your_brand_is_more", "services"); ?></p>
+                        <div class="timeline-container timeline-container-left">
+                            <div class="timeline-content">
+                                <div class="reviews-block">
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-3.webp);"></div>
+
+                                    <div class="reviews-block-info">
+                                        <h3 class="fw-bold text-white h4"><?php getContent("brand_identity", "services"); ?></h3>
+                                        <p><?php getContent("your_brand_is_more", "services"); ?></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <img class="img-fluid rounded" loading="lazy" width="515" height="343" src="/assets/imgs/services/services-3.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("brand_identity", "services"); ?>">
-                    </div>
-                </div>
 
-                <div class="row py-5 my-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-                        <img class="img-fluid rounded" loading="lazy" width="356" height="474" src="/assets/imgs/services/services-4.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("seo_friendly_development", "services"); ?>">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="mt-4">
-                            <p class="fw-bold mb-3 h3 text-white"><?php getContent("seo_friendly_development", "services"); ?></p>
-                            <p class="text-white"><?php getContent("a_beautiful_website", "services"); ?></p>
+                        <div class="timeline-container timeline-container-right">
+                            <div class="timeline-content">
+                                <div class="reviews-block">
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-4.webp);"></div>
+
+                                    <div class="reviews-block-info">
+                                        <h3 class="fw-bold text-white h4"><?php getContent("seo_friendly_development", "services"); ?></h3>
+                                        <p><?php getContent("a_beautiful_website", "services"); ?></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="timeline-container timeline-container-left">
+                            <div class="timeline-content">
+                                <div class="reviews-block">
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-3.webp);"></div>
+
+                                    <div class="reviews-block-info">
+                                        <h3 class="fw-bold text-white h4"><?php getContent("hosting_and_domain", "services"); ?></h3>
+                                        <p><?php getContent("we_provide_reliable", "services"); ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-container timeline-container-right">
+                            <div class="timeline-content">
+                                <div class="reviews-block">
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-4.webp);"></div>
+
+                                    <div class="reviews-block-info">
+                                        <h3 class="fw-bold text-white h4"><?php getContent("website_maintenance", "services"); ?></h3>
+                                        <p><?php getContent("your_website_is_a_living", "services"); ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-container timeline-container-left">
+                            <div class="timeline-content">
+                                <div class="reviews-block">
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-3.webp);"></div>
+
+                                    <div class="reviews-block-info">
+                                        <h3 class="fw-bold text-white h4"><?php getContent("hosting_and_domain", "services"); ?></h3>
+                                        <p><?php getContent("we_provide_reliable", "services"); ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
+            </div>
+        </section>
 
-                <div class="row py-5 my-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <p class="fw-bold mb-3 h3 text-white"><?php getContent("hosting_and_domain", "services"); ?></p>
-                        <p class="text-white"><?php getContent("we_provide_reliable", "services"); ?></p>
-                    </div>
-                    <div class="col-lg-6">
-
-                    </div>
-                </div>
-
-                <div class="row py-5 my-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-
-                    </div>
-                    <div class="col-lg-6">
-                        <p class="fw-bold mb-3 h3 text-white"><?php getContent("website_maintenance", "services"); ?></p>
-                        <p class="text-white"><?php getContent("your_website_is_a_living", "services"); ?></p>
-                    </div>
-                </div>
-
-
+        <section class="py-5">
+            <div class="container">
                 <div class="row py-5 my-5">
                     <div class="col-lg-12 text-center">
-                        <p class="fw-bold h2 text-white mb-5">
+                        <h2 class="fw-bold h2 text-white mb-5">
                             <?php getContent("lets_build_something", "services"); ?>
-                        </p>
+                        </h2>
                         <div>
                             <a class="btn custom-btn custom-border-btn smoothscroll" href="/contact">
                                 <?php getContent("contact", "common"); ?>
@@ -105,7 +169,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 

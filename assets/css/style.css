@@ -1162,6 +1162,10 @@ strong {
   padding: 30px;
 }
 
+.w-fit {
+  width: fit-content;
+}
+
 .reviews-block-image {
   border-radius: var(--border-radius-large);
   width: 65px;
@@ -1504,7 +1508,6 @@ strong {
 
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
-    margin-bottom: 0;
   }
 
   .navbar .custom-btn {
