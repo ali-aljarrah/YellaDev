@@ -112,7 +112,7 @@ if ($lang == 'ar') {
                         <div class="timeline-container timeline-container-left">
                             <div class="timeline-content">
                                 <div class="reviews-block">
-                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-3.webp);"></div>
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-5.jpg);"></div>
 
                                     <div class="reviews-block-info">
                                         <h3 class="fw-bold text-white h4"><?php getContent("hosting_and_domain", "services"); ?></h3>
@@ -125,7 +125,7 @@ if ($lang == 'ar') {
                         <div class="timeline-container timeline-container-right">
                             <div class="timeline-content">
                                 <div class="reviews-block">
-                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-4.webp);"></div>
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-6.jpg);"></div>
 
                                     <div class="reviews-block-info">
                                         <h3 class="fw-bold text-white h4"><?php getContent("website_maintenance", "services"); ?></h3>
@@ -138,7 +138,7 @@ if ($lang == 'ar') {
                         <div class="timeline-container timeline-container-left">
                             <div class="timeline-content">
                                 <div class="reviews-block">
-                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-3.webp);"></div>
+                                    <div class="reviews-block-image-wrap d-flex align-items-center" style="background-image: url(/assets/imgs/services/services-7.jpg);"></div>
 
                                     <div class="reviews-block-info">
                                         <h3 class="fw-bold text-white h4"><?php getContent("hosting_and_domain", "services"); ?></h3>

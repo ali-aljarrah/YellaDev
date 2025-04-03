@@ -67,6 +67,26 @@
                         <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/1s2u-help.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
                         <h3 class="text-white h5 mt-3">support.1s2u.io</h3>
                     </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/sensy_co.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">sensy-co.com</h3>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/tazahasathome1.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">tazahasat.com</h3>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/luxurygirlstore.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">luxurygirlstore.com</h3>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/enfeshome1.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">enfes.shop</h3>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/dollaratystore.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">dollaraty.com</h3>
+                    </div>
                 </div>
            </div>
         </section>

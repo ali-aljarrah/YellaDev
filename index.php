@@ -60,11 +60,15 @@
 
                     <div class="col-lg-6 col-12">
                         <div class="ratio ratio-1x1">
-                            <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                            <!-- <video autoplay="" loop="" muted="" class="custom-video" poster="">
                                 <source src="assets/videos/pexels-mike-jones-9046237.mp4" type="video/mp4">
 
                                 Your browser does not support the video tag.
-                            </video>
+                            </video> -->
+
+                            <div class="custom-video h-100">
+                                <img loading="lazy" src="/assets/imgs/aboutt.jpg" class="img-fluid">
+                            </div>
 
                             <div class="about-video-info d-flex flex-column">
                                 <h2 class="mt-auto"><?php getContent("we_started", "home") ?></h4>

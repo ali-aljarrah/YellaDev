@@ -1011,7 +1011,6 @@ strong {
     rgba(0, 0, 0, 0.35),
     rgba(188, 108, 37, 1)
   );
-  border-radius: var(--border-radius-medium);
   bottom: 0;
   height: auto;
   padding: 40px;
