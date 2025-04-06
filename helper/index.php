@@ -4,7 +4,7 @@ session_start();
 
 function getSessionLang() {
 
-    $session_lang = 'ar';
+    $session_lang = 'en';
 
     if(isset($_SESSION["lang"]) && !empty($_SESSION["lang"])) {
         $session_lang = $_SESSION["lang"];

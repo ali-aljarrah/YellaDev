@@ -1094,7 +1094,7 @@ strong {
   border-top-color: rgba(255, 255, 255, 0.35) !important;
 }
 
-.menu-block h6 {
+.menu-block h2, .menu-block h3 {
   color: var(--white-color);
 }
 
@@ -1318,7 +1318,7 @@ strong {
   background: var(--custom-btn-bg-color);
   border: none;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  color: #312828;;
   font-size: var(--form-btn-font-size);
   font-weight: var(--font-weight-bold);
   transition: all 0.3s;
@@ -1369,18 +1369,16 @@ strong {
 }
 
 .site-footer strong {
-  color: var(--white-color);
+  color: var(--dark-color);
 }
 
 .site-footer p,
 .site-footer-link {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--dark-color);
   font-size: var(--btn-font-size);
 }
 
 .site-footer-link {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: var(--btn-font-size);
   transition: all 0.3s;
 }
 
@@ -1390,8 +1388,9 @@ strong {
 }
 
 .copyright-text {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: var(--menu-font-size);
+  color: var(--dark-color);
+  font-size: var(--btn-font-size);
+
 }
 
 .copyright-text a {
