@@ -15,4 +15,5 @@ return [
     "error_message" => "Please enter your message.",
     "error_general" => "Oops! Something went wrong. Please try again.",
     "success_message" => "Thank you for contacting us! We will get back to you soon.",
+    "contact_with_yelladev" => "Contact With YellaDev"
 ];

@@ -74,6 +74,26 @@ background-size: cover;
 animation-duration: 5000ms;
 } */
 
+.form-control-search-bar {
+  display: inline;
+  width: 70%;
+  /* align-items: center; */
+  /* text-align: center; */
+  justify-content: center;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff12;
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
 
 .vegas-animation-kenburns {
   background-image: url(/assets/imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
