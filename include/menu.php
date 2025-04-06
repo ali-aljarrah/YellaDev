@@ -36,7 +36,7 @@
           <div>
             <form id="LangForm" method="POST" action="">
               <div class="dropdown">
-                <select class="form-select bg-secondary text-white border-0 w-fit" name="LangOption" id="LangOption">
+                <select class="form-select bg-secondary text-white border-0 w-fit" name="LangOption" id="LangOption" aria-label="Change Language">
                   <option value="ar" <?php echo ($lang == "ar") ? "selected" : ""; ?>><?php getContent("arabic", "common"); ?></option>
                   <option value="en" <?php echo ($lang == "en") ? "selected" : ""; ?>><?php getContent("english", "common"); ?></option>
                 </select>
