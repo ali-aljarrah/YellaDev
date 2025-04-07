@@ -87,6 +87,30 @@
                         <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/dollaratystore.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
                         <h3 class="text-white h5 mt-3">dollaraty.com</h3>
                     </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/hadeeljanood.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">hadeel-jannoud.com</h3>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/royalclinica.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">royalclinica.com</h3>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/biusmile.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">biusmile.com</h3>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/learn.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">learntaswik.com</h3>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/salama.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">salamanutrition.com</h3>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/wellnessbd.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <h3 class="text-white h5 mt-3">wellnessbd.com</h3>
+                    </div>
                 </div>
            </div>
         </section>
