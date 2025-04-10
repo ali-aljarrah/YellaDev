@@ -1,7 +1,7 @@
 <?php include 'include/head.php'; ?>
 <title><?php getContent("yellaDev", "common"); ?> - <?php getContent("contact", "common"); ?></title>
 </head>
-<body>
+<body class="pt-0">
 
     <?php include 'include/loader.php'; ?>
     <?php include 'include/menu.php'; ?>
@@ -12,12 +12,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 text-center mx-auto">
-                    <h2 class="mb-3 text-white"><?php getContent("how_can_we_help", "contact"); ?></h2>
-                        <!-- <nav class="navbar navbar-light bg-light"> -->
-                            <form class="form-inline">
-                                <input class="form-control-search-bar mb-3 mt-3 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-                            </form>
+                        <h1 class="mb-3 text"><?php getContent("how_can_we_help", "contact"); ?></h1>
+                        <!-- <p class="text-white">
+                        <?php getContent("yellaDev_is_a_team", "about"); ?>
+                        </p> -->
                     </div>
                 </div>
             </div>
