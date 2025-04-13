@@ -111,11 +111,10 @@
                                     </div>
                                 </div>
 
-                                <div class="team-block-image-wrap h-100">
-                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/seo.webp" class="team-block-image img-fluid" alt="<?php getContent("seo_friendly", "home"); ?>">
-                                </div>
+                            <div class="team-block-image-wrap h-100">
+                                <img loading="lazy" width="306" height="462" src="/assets/imgs/team/seo1.webp" class="team-block-image img-fluid" alt="<?php getContent("seo_friendly", "home"); ?>">
                             </div>
-                        </a>
+                        </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
@@ -128,11 +127,10 @@
 
                                 </div>
 
-                                <div class="team-block-image-wrap h-100">
-                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/Hosting.webp" class="team-block-image img-fluid" alt="<?php getContent("blazing_fase", "home"); ?>">
-                                </div>
+                            <div class="team-block-image-wrap h-100">
+                                <img loading="lazy" width="306" height="462" src="/assets/imgs/team/w2.jpg" class="team-block-image img-fluid" alt="<?php getContent("blazing_fase", "home"); ?>">
                             </div>
-                        </a>
+                        </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">

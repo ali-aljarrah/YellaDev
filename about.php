@@ -28,9 +28,9 @@
                     </div>
                     
                     <div class="col-lg-6">
-                        <h2 class="mb-3 text-white"><?php getContent("technologies_we_use", "about"); ?></h2>
+                        <h2 class="mb-3 text-white"><?php getContent("Who We Are?", "about"); ?></h2>
                         <p class="text-white">
-                            <?php getContent("our_team_is_skilled", "about"); ?>
+                            <?php getContent("yelladev_company", "about"); ?>
                         </p>
                         <p class="text-white">
                             <?php getContent("your_success", "about"); ?>

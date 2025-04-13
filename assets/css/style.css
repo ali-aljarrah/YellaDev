@@ -260,6 +260,9 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
+.silver-color{
+ color: #bcc1c1;
+}
 /*---------------------------------------
     SECTION               
   -----------------------------------------*/
@@ -1154,6 +1157,15 @@ strong {
   border-right: 10px solid var(--primary-color);
 }
 
+/* contact cards */
+
+.card.ms-auto.me-auto.card-width {
+  background: #c7a965 !important;
+  padding: 10px;
+}
+
+
+
 /*---------------------------------------
     REVIEWS              
   -----------------------------------------*/
@@ -1177,7 +1189,7 @@ strong {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 30px;
+  padding: 65px;
 }
 
 .w-fit {
