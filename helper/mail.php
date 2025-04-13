@@ -94,8 +94,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPDebug = 2;
 
             // Recipients
-            $mail->setFrom($email, $name); // Sender
-            $mail->addAddress('info@yelladev.com', 'YellaDev'); // Recipient
+            $mail->setFrom('info@yelladev.com', 'YellaDev'); // Sender
+            $mail->addAddress($email, $name); // Recipient
 
             // Content
             $mail->isHTML(true); // Set email format to HTML
