@@ -201,6 +201,8 @@
                             var response = JSON.parse(response);
                             $("#contactBtn").prop("disabled", false);
 
+                            console.log(response);
+
                             if (response.error) {
                                 if (response.message == "name") {
                                     toastr.error("<?php echo getContent("error_name", "contact"); ?>");
@@ -223,6 +225,9 @@
                             $('#contactForm')[0].reset(); // Reset the form
                         },
                         error: function(xhr, status, error) {
+
+                            console.log(error);
+                            
                             $("#contactBtn").prop("disabled", false);
                             toastr.error("<?php echo getContent("error_general", "contact"); ?>");
                         }
