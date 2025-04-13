@@ -1,6 +1,7 @@
 <?php include 'include/head.php'; ?>
 <title><?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?></title>
 </head>
+
 <body class="pt-0">
 
     <?php include 'include/loader.php'; ?>
@@ -21,98 +22,144 @@
         </section>
 
         <section class="py-5">
-           <div class="container">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/topysale.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 1">
+                        <a href="/assets/imgs/projects/topysale.webp" data-lightbox="project-gallery" data-title="TopySale.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy"
+                                src="/assets/imgs/projects/topysale.webp"
+                                alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 1">
+                        </a>
                         <h2 class="text-white h5 mt-3">TopySale.com</h2>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/sehati.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 1">
+                        <a href="/assets/imgs/projects/sehati.webp" data-lightbox="project-gallery" data-title="sehati.perkeso.gov.my">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/sehati.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 1">
+                        </a>
                         <h3 class="text-white h5 mt-3">sehati.perkeso.gov.my</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/wideover.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 1">
+                        <a href="/assets/imgs/projects/wideover.webp" data-lightbox="project-gallery" data-title="wideover.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/wideover.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 1">
+                        </a>
                         <h3 class="text-white h5 mt-3">wideover.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/wideover-tools.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 1">
+                        <a href="/assets/imgs/projects/wideover-tools.webp" data-lightbox="project-gallery" data-title="seo.wideover.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/wideover-tools.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 1">
+                        </a>
                         <h3 class="text-white h5 mt-3">seo.wideover.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/nexotech.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 1">
+                        <a href="/assets/imgs/projects/nexotech.webp" data-lightbox="project-gallery" data-title="nexotech.my">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/nexotech.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 1">
+                        </a>
                         <h3 class="text-white h5 mt-3">nexotech.my</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/floppysend.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 1">
+                        <a href="/assets/imgs/projects/floppysend.webp" data-lightbox="project-gallery" data-title="FloppySend.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/floppysend.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 1">
+                        </a>
                         <h3 class="text-white h5 mt-3">FloppySend.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/floppysend-help.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 1">
+                        <a href="/assets/imgs/projects/floppysend-help.webp" data-lightbox="project-gallery" data-title="help.FloppySend.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/floppysend-help.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 1">
+                        </a>
                         <h3 class="text-white h5 mt-3">help.FloppySend.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/easysendsms.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 2">
+                        <a href="/assets/imgs/projects/easysendsms.webp" data-lightbox="project-gallery" data-title="EasySendSMS.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/easysendsms.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 2">
+                        </a>
                         <h3 class="text-white h5 mt-3">EasySendSMS.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/easysendsms-help.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 2">
+                        <a href="/assets/imgs/projects/easysendsms-help.webp" data-lightbox="project-gallery" data-title="help.EasySendSMS.app">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/easysendsms-help.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 2">
+                        </a>
                         <h3 class="text-white h5 mt-3">help.EasySendSMS.app</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/1s2u.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/1s2u.webp" data-lightbox="project-gallery" data-title="1s2u.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/1s2u.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">1s2u.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/1s2u-help.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/1s2u-help.webp" data-lightbox="project-gallery" data-title="support.1s2u.io">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/1s2u-help.webp" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">support.1s2u.io</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/sensy_co.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/sensy_co.png" data-lightbox="project-gallery" data-title="sensy-co.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/sensy_co.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">sensy-co.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/tazahasathome1.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/tazahasathome1.png" data-lightbox="project-gallery" data-title="tazahasat.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/tazahasathome1.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">tazahasat.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/luxurygirlstore.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/luxurygirlstore.png" data-lightbox="project-gallery" data-title="luxurygirlstore.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/luxurygirlstore.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">luxurygirlstore.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/enfeshome1.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/enfeshome1.png" data-lightbox="project-gallery" data-title="enfes.shop">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/enfeshome1.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">enfes.shop</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/dollaratystore.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/dollaratystore.png" data-lightbox="project-gallery" data-title="dollaraty.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/dollaratystore.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">dollaraty.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/hadeeljanood.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/hadeeljanood.png" data-lightbox="project-gallery" data-title="hadeel-jannoud.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/hadeeljanood.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">hadeel-jannoud.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/royalclinica.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/royalclinica.png" data-lightbox="project-gallery" data-title="royalclinica.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/royalclinica.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">royalclinica.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/biusmile.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/biusmile.png" data-lightbox="project-gallery" data-title="biusmile.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/biusmile.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">biusmile.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/learn.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/learn.png" data-lightbox="project-gallery" data-title="learntaswik.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/learn.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">learntaswik.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/salama.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/salama.png" data-lightbox="project-gallery" data-title="salamanutrition.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/salama.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">salamanutrition.com</h3>
                     </div>
                     <div class="col-lg-3 mb-4">
-                        <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/wellnessbd.png" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?> - 3">
+                        <a href="/assets/imgs/projects/wellnessbd.png" data-lightbox="project-gallery" data-title="wellnessbd.com">
+                            <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/wellnessbd.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
+                        </a>
                         <h3 class="text-white h5 mt-3">wellnessbd.com</h3>
                     </div>
                 </div>
-           </div>
+            </div>
         </section>
 
         <section class="py-5 contact-section">
@@ -135,4 +182,5 @@
 
     <?php include 'include/footer.php'; ?>
 </body>
+
 </html>

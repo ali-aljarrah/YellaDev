@@ -39,9 +39,15 @@ if (empty($_SESSION['csrf_token'])) {
     <link rel="icon" type="image/png" href="/assets/imgs/icon/favicon-16x16.png" sizes="16x16" />
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Lightbox CSS -->
+     <link rel="stylesheet" href="/assets/css/lightbox.min.css" />
+
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/vegas.min.css" rel="stylesheet">
     <link href="/assets/css/toastr.min.css" rel="stylesheet">
+    
+   
 
     <meta name="keywords" content="YellaDev,SEO,custom websites,e-commerce platforms,brand identities,Digital Excellence,build websites">
     <meta name="author" content="www.yelladev.com">

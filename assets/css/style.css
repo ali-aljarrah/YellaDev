@@ -1477,6 +1477,10 @@ strong {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgb(200 170 101));
 }
 
+.lightbox {
+  z-index: 9999999;
+}
+
 /*---------------------------------------
     RESPONSIVE STYLES               
   -----------------------------------------*/
