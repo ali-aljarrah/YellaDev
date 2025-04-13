@@ -223,7 +223,6 @@
                             $('#contactForm')[0].reset(); // Reset the form
                         },
                         error: function(xhr, status, error) {
-                            console.log(response)
                             $("#contactBtn").prop("disabled", false);
                             toastr.error("<?php echo getContent("error_general", "contact"); ?>");
                         }
