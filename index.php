@@ -94,7 +94,7 @@
 
         <section class="barista-section section-padding gra-bg">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row">
 
                     <div class="col-lg-12 text-center mb-4 pb-lg-2">
 
@@ -111,26 +111,28 @@
                                     </div>
                                 </div>
 
-                            <div class="team-block-image-wrap h-100">
-                                <img loading="lazy" width="306" height="462" src="/assets/imgs/team/seo1.webp" class="team-block-image img-fluid" alt="<?php getContent("seo_friendly", "home"); ?>">
+                                <div class="team-block-image-wrap h-100">
+                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/seo1.webp" class="team-block-image img-fluid" alt="<?php getContent("seo_friendly", "home"); ?>">
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
                         <a href="/services" class="h-100 d-block">
-                            <div class="team-block-wrap h-100">
-                                <div class="team-block-info d-flex flex-column">
-                                    <div class="d-flex mt-auto mb-3">
-                                        <p class="text-white mb-0"><?php getContent("blazing_fase", "home"); ?></p>
+                                <div class="team-block-wrap h-100">
+                                    <div class="team-block-info d-flex flex-column">
+                                        <div class="d-flex mt-auto mb-3">
+                                            <p class="text-white mb-0"><?php getContent("blazing_fase", "home"); ?></p>
+                                        </div>
+
                                     </div>
 
+                                <div class="team-block-image-wrap h-100">
+                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/w2.jpg" class="team-block-image img-fluid" alt="<?php getContent("blazing_fase", "home"); ?>">
                                 </div>
-
-                            <div class="team-block-image-wrap h-100">
-                                <img loading="lazy" width="306" height="462" src="/assets/imgs/team/w2.jpg" class="team-block-image img-fluid" alt="<?php getContent("blazing_fase", "home"); ?>">
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
