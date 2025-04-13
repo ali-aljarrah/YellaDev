@@ -422,7 +422,7 @@ strong {
   padding: 12px 28px;
 }
 
-.custom-btn:hover {
+.custom-btn:hover{
   background: var(--custom-btn-bg-hover-color);
   color: var(--white-color);
 }
@@ -433,7 +433,7 @@ strong {
   color: var(--white-color);
 }
 
-.custom-border-btn:hover {
+.custom-border-btn:hover, .custom-border-btn.active  {
   background: var(--white-color);
   color: var(--secondary-color);
 }
