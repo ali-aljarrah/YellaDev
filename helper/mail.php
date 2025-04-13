@@ -84,16 +84,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             // Server settings
             $mail->isSMTP(); // Use SMTP
-            $mail->Host = 'sandbox.smtp.mailtrap.io'; // SMTP server (e.g., smtp.gmail.com)
+            $mail->Host = 'smtp.hostinger.com'; // SMTP server (e.g., smtp.gmail.com)
             $mail->SMTPAuth = true; // Enable SMTP authentication
-            $mail->Username = 'e71c4ce96445dc'; // SMTP username
-            $mail->Password = '1e20950a5452ba'; // SMTP password
+            $mail->Username = 'info@yelladev.com'; // SMTP username
+            $mail->Password = 'oin+[~C~Z6'; // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
-            $mail->Port = 2525; // TCP port to connect to
+            $mail->Port = 465; // TCP port to connect to
 
             // Recipients
-            $mail->setFrom('your-email@example.com', 'Your Name'); // Sender
-            $mail->addAddress('recipient@example.com', 'Recipient Name'); // Recipient
+            $mail->setFrom($email, $name); // Sender
+            $mail->addAddress('info@yelladev.com', 'YellaDev'); // Recipient
 
             // Content
             $mail->isHTML(true); // Set email format to HTML
