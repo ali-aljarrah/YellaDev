@@ -172,7 +172,7 @@
                     <div class="col-lg-12 mb-4 mb-lg-0">
                         <div class="menu-block-wrap">
                             <div class="text-center mb-5 pb-lg-2">
-                                <h2 class="text-white"><?php getContent("technologies_we_use", "home"); ?>123123</h2>
+                                <h2 class="text-white"><?php getContent("technologies_we_use", "home"); ?></h2>
                             </div>
 
                             <div class="menu-block text-center">
