@@ -114,6 +114,23 @@
                 </div>
            </div>
         </section>
+
+        <section class="py-5 contact-section">
+            <div class="container">
+                <div class="row py-5 my-5">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="fw-bold h2 text-white mb-5">
+                            <?php getContent("lets_build_something", "services"); ?>
+                        </h2>
+                        <div>
+                            <a class="btn custom-btn custom-border-btn smoothscroll" href="/contact">
+                                <?php getContent("contact", "common"); ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <?php include 'include/footer.php'; ?>

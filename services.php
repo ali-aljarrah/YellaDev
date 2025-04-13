@@ -154,7 +154,7 @@ if ($lang == 'ar') {
             </div>
         </section>
 
-        <section class="py-5">
+        <section class="py-5 contact-section">
             <div class="container">
                 <div class="row py-5 my-5">
                     <div class="col-lg-12 text-center">

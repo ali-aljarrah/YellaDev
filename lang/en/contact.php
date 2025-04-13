@@ -3,7 +3,8 @@
 return [
     "lets_get_in" => "Let's Get in Touch!",
     "ready_to_take" => "Ready to take your online presence to the next level? Contact us today to discuss your project. We’re here to answer your questions and provide the best solutions for your business.",
-    "name" => "Name: ",
+    "name" => "First name: ",
+    "last_name" => "Last name ",
     "email" => "Email:",
     "phone" => "Phone:",
     "address" => "Address:",
@@ -12,6 +13,7 @@ return [
     "send_message" => "Send Message",
     "error_name" => "Please enter your full name.",
     "error_email" => "Please enter a valid email address.",
+    "error_phone" => "Please enter a valid phone number.",
     "error_message" => "Please enter your message.",
     "error_general" => "Oops! Something went wrong. Please try again.",
     "success_message" => "Thank you for contacting us! We will get back to you soon.",

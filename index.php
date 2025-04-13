@@ -60,7 +60,7 @@
 
         <!-- section 2  -->
 
-        <section class="about-section section-padding">
+        <section class="section-padding">
             <div class="section-overlay"></div>
             <div class="container">
                 <div class="row align-items-center">
@@ -92,7 +92,7 @@
         </section>
 
 
-        <section class="barista-section section-padding section-bg">
+        <section class="barista-section section-padding gra-bg">
             <div class="container">
                 <div class="row justify-content-center">
 
@@ -103,62 +103,70 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
-                        <div class="team-block-wrap h-100">
-                            <div class="team-block-info d-flex flex-column">
-                                <div class="d-flex mt-auto mb-3">
-                                    <p class="text-white mb-0"><?php getContent("seo_friendly", "home"); ?></p>
+                        <a href="/services" class="h-100 d-block">
+                            <div class="team-block-wrap h-100">
+                                <div class="team-block-info d-flex flex-column">
+                                    <div class="d-flex mt-auto mb-3">
+                                        <p class="text-white mb-0"><?php getContent("seo_friendly", "home"); ?></p>
+                                    </div>
+                                </div>
+
+                                <div class="team-block-image-wrap h-100">
+                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/seo.webp" class="team-block-image img-fluid" alt="<?php getContent("seo_friendly", "home"); ?>">
                                 </div>
                             </div>
-
-                            <div class="team-block-image-wrap h-100">
-                                <img loading="lazy" width="306" height="462" src="/assets/imgs/team/seo.webp" class="team-block-image img-fluid" alt="<?php getContent("seo_friendly", "home"); ?>">
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
-                        <div class="team-block-wrap h-100">
-                            <div class="team-block-info d-flex flex-column">
-                                <div class="d-flex mt-auto mb-3">
-                                    <p class="text-white mb-0"><?php getContent("blazing_fase", "home"); ?></p>
+                        <a href="/services" class="h-100 d-block">
+                            <div class="team-block-wrap h-100">
+                                <div class="team-block-info d-flex flex-column">
+                                    <div class="d-flex mt-auto mb-3">
+                                        <p class="text-white mb-0"><?php getContent("blazing_fase", "home"); ?></p>
+                                    </div>
+
                                 </div>
 
+                                <div class="team-block-image-wrap h-100">
+                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/Hosting.webp" class="team-block-image img-fluid" alt="<?php getContent("blazing_fase", "home"); ?>">
+                                </div>
                             </div>
-
-                            <div class="team-block-image-wrap h-100">
-                                <img loading="lazy" width="306" height="462" src="/assets/imgs/team/Hosting.webp" class="team-block-image img-fluid" alt="<?php getContent("blazing_fase", "home"); ?>">
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
-                        <div class="team-block-wrap h-100">
-                            <div class="team-block-info d-flex flex-column">
-                                <div class="d-flex mt-auto mb-3">
-                                    <p class="text-white mb-0"><?php getContent("mobile_first", "home"); ?></p>
+                        <a href="/services" class="h-100 d-block">
+                            <div class="team-block-wrap h-100">
+                                <div class="team-block-info d-flex flex-column">
+                                    <div class="d-flex mt-auto mb-3">
+                                        <p class="text-white mb-0"><?php getContent("mobile_first", "home"); ?></p>
+                                    </div>
+
                                 </div>
 
+                                <div class="team-block-image-wrap h-100">
+                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/ecomm.webp" class="team-block-image img-fluid" alt="<?php getContent("mobile_first", "home"); ?>">
+                                </div>
                             </div>
-
-                            <div class="team-block-image-wrap h-100">
-                                <img loading="lazy" width="306" height="462" src="/assets/imgs/team/ecomm.webp" class="team-block-image img-fluid" alt="<?php getContent("mobile_first", "home"); ?>">
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 h-100">
-                        <div class="team-block-wrap h-100">
-                            <div class="team-block-info d-flex flex-column">
-                                <div class="d-flex mt-auto mb-3">
-                                    <p class="text-white mb-0"><?php getContent("end_to_end", "home"); ?></p>
+                        <a href="/services" class="h-100 d-block">
+                            <div class="team-block-wrap h-100">
+                                <div class="team-block-info d-flex flex-column">
+                                    <div class="d-flex mt-auto mb-3">
+                                        <p class="text-white mb-0"><?php getContent("end_to_end", "home"); ?></p>
+                                    </div>
+
                                 </div>
 
+                                <div class="team-block-image-wrap h-100">
+                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/web.png" class="team-block-image img-fluid" alt="<?php getContent("end_to_end", "home"); ?>">
+                                </div>
                             </div>
-
-                            <div class="team-block-image-wrap h-100">
-                                <img loading="lazy" width="306" height="462" src="/assets/imgs/team/web.png" class="team-block-image img-fluid" alt="<?php getContent("end_to_end", "home"); ?>">
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -201,6 +209,7 @@
     </main>
 
 
+    <?php include 'include/email_form.php'; ?>
 
 
     <?php include 'include/footer.php'; ?>

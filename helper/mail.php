@@ -19,9 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
     // Retrieve form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = $_POST['name'] ?? '';
+    $lastname = $_POST['lastname'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $phone = $_POST['phone'] ?? '';
+    $message = $_POST['message'] ?? '';
     $captcha = $_POST['g-recaptcha-response']; // reCAPTCHA token
 
     // Validate reCAPTCHA v3
@@ -48,11 +50,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // reCAPTCHA validation passed
         // Validate and sanitize input
         $name = htmlspecialchars(strip_tags(trim($name)));
+        $lastname = htmlspecialchars(strip_tags(trim($lastname)));
         $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        $phone = htmlspecialchars(strip_tags(trim($phone)));
         $message = htmlspecialchars(strip_tags(trim($message)));
 
         // Validate name
         if(empty($name)) {
+            echo json_encode([
+                'error' => true,
+                'message' => 'name'
+            ]);
+            exit;
+        }
+
+        // Validate last name
+        if(empty($lastname)) {
             echo json_encode([
                 'error' => true,
                 'message' => 'name'
@@ -65,6 +78,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo json_encode([
                 'error' => true,
                 'message' => 'email'
+            ]);
+            exit;
+        }
+
+        $phoneRegex = '/^(\+\d{1,3}[- ]?)?\d{10}$/';
+
+        // Validate phone
+        if(empty($phone)) {
+            echo json_encode([
+                'error' => true,
+                'message' => 'phone'
+            ]);
+            exit;
+        }
+
+        if (!preg_match($phoneRegex, $phone)) {
+            echo json_encode([
+                'error' => true,
+                'message' => 'phone'
             ]);
             exit;
         }
@@ -96,6 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Recipients
             $mail->setFrom('info@yelladev.com', $email); // Sender
             $mail->addAddress('info@yelladev.com', 'YellaDev'); // Recipient
+            $mail->addAddress('yelladeveloper@gmail.com', 'YellaDev'); // Recipient
 
             // Content
             $mail->isHTML(true); // Set email format to HTML

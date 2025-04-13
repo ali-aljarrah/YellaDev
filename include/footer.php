@@ -1,68 +1,15 @@
-<section class="contact-section section-padding" id="section_5">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-12 col-12">
-                <em class="text-white"><?php getContent("say_hello", "contact"); ?></em>
-                <h2 class="text-white mb-4 pb-lg-2"><?php getContent("contact", "common"); ?></h2>
-            </div>
-
-            <div class="col-lg-6 col-12">
-                <form id="contactForm" class="custom-form contact-form" role="form">
-
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <label for="name" class="form-label"><?php getContent("name", "contact"); ?> <sup class="text-danger">*</sup></label>
-
-                            <input type="text" name="name" id="name" class="form-control" required="">
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <label for="email" class="form-label"><?php getContent("email", "contact"); ?></label>
-
-                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" required="">
-                        </div>
-
-                        <div class="col-12">
-                            <label for="message" class="form-label"><?php getContent("how_can_we_help", "contact"); ?></label>
-
-                            <textarea name="message" rows="4" class="form-control" id="message" required=""></textarea>
-
-                        </div>
-
-                        <!-- Hidden input for reCAPTCHA token -->
-                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-                        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
-                        <input type="hidden" name="hb" value="">
-                    </div>
-
-                    <div class="col-lg-5 col-12 mx-auto mt-3">
-                        <button id="contactBtn" type="submit" class="form-control"><?php getContent("send_message", "contact"); ?></button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
-                <img class="img-fluid rounded-4" width="600" height="400" loading="lazy" src="/assets/imgs/abo.webp" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("contact", "common"); ?>">
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <footer class="site-footer">
     <div class="container">
         <div class="row">
 
             <div class="col-lg-4 col-12 me-auto">
-                <a href="/" class="p-3">
+                <a href="/">
                     <img width="183" height="61" class="img-fluid bg-dark rounded" loading="lazy" src="/assets/imgs/logo.webp" alt="YellaDev Site Logo footer">
                 </a>
             </div>
 
             <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
-                <em class="d-block mb-4"><?php getContent("contact", "common"); ?></em>
 
                 <p class="d-flex mb-1">
                     <strong class="mx-2"><?php getContent("phone", "contact"); ?> </strong> 
@@ -87,7 +34,7 @@
                         $iconPos = "text-end text-lg-start";
                     }
                 ?>
-                <ul class="social-icon mt-4 <?php echo $iconPos; ?>">
+                <ul class="social-icon <?php echo $iconPos; ?>">
                     <li class="social-icon-item mx-3">
                         <a href="#" target="_blank" aria-label="Facebook Account">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -162,6 +109,12 @@
                 return;
             }
 
+            if($('#lastname').val().trim() === '') {
+                toastr.error("<?php echo getContent("error_name", "contact"); ?>");
+                $("#contactBtn").prop("disabled", false);
+                return;
+            }
+
             var email = $('#email').val().trim();
             var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -173,6 +126,21 @@
 
             if (!emailPattern.test(email)) {
                 toastr.error("<?php echo getContent("error_email", "contact"); ?>");
+                $("#contactBtn").prop("disabled", false);
+                return;
+            }
+
+            var phone = $('#phone').val().trim();
+            var phoneRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+
+            if(phone === '') {
+                toastr.error("<?php echo getContent("error_phone", "contact"); ?>");
+                $("#contactBtn").prop("disabled", false);
+                return;
+            }
+
+            if (!phoneRegex.test(phone)) {
+                toastr.error("<?php echo getContent("error_phone", "contact"); ?>");
                 $("#contactBtn").prop("disabled", false);
                 return;
             }
@@ -201,8 +169,6 @@
                             var response = JSON.parse(response);
                             $("#contactBtn").prop("disabled", false);
 
-                            console.log(response);
-
                             if (response.error) {
                                 if (response.message == "name") {
                                     toastr.error("<?php echo getContent("error_name", "contact"); ?>");
@@ -210,6 +176,10 @@
                                 }
                                 if (response.message == "email") {
                                     toastr.error("<?php echo getContent("error_email", "contact"); ?>");
+                                    return;
+                                }
+                                if (response.message == "phone") {
+                                    toastr.error("<?php echo getContent("error_phone", "contact"); ?>");
                                     return;
                                 }
                                 if (response.message == "message") {
@@ -227,7 +197,7 @@
                         error: function(xhr, status, error) {
 
                             console.log(error);
-                            
+
                             $("#contactBtn").prop("disabled", false);
                             toastr.error("<?php echo getContent("error_general", "contact"); ?>");
                         }

@@ -44,6 +44,8 @@
         </section>
     </main>
 
+    <?php include 'include/email_form.php'; ?>
+
     <?php include 'include/footer.php'; ?>
 </body>
 </html>

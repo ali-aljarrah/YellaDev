@@ -1055,7 +1055,6 @@ strong {
   position: relative;
   overflow: hidden;
   max-height: 450px;
-  cursor: pointer;
 }
 
 .team-block-wrap:hover .team-block-image {
@@ -1255,6 +1254,13 @@ strong {
   border-color: transparent;
 }
 
+.gra-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgb(200 170 101), rgba(0, 0, 0, 0.45));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /*---------------------------------------
     CONTACT               
   -----------------------------------------*/
@@ -1384,7 +1390,7 @@ strong {
   -----------------------------------------*/
 .site-footer {
   background-color: rgb(200 170 101);
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
