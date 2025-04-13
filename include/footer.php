@@ -147,7 +147,7 @@
 <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
 <script src="/assets/js/toastr.min.js"defer></script>
 <script src="/assets/js/main.js" defer></script>
-<script src="https://www.google.com/recaptcha/api.js?render=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=<?php echo captcha_siteKey ?>"></script>
 <script>
     $(document).ready(function() {
         // Execute reCAPTCHA v3 on form submission
