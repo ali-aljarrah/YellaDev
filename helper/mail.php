@@ -90,6 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Password = 'oin+[~C~Z6'; // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
             $mail->Port = 465; // TCP port to connect to
+            
+            $mail->SMTPDebug = 2;
 
             // Recipients
             $mail->setFrom($email, $name); // Sender
