@@ -91,15 +91,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
             $mail->Port = 587; // TCP port to connect to
 
-            $mail->SMTPDebug = 2;
+            //$mail->SMTPDebug = 2;
 
             // Recipients
-            $mail->setFrom('info@yelladev.com', 'YellaDev'); // Sender
-            $mail->addAddress($email, $name); // Recipient
+            $mail->setFrom('info@yelladev.com', $email); // Sender
+            $mail->addAddress('info@yelladev.com', 'YellaDev'); // Recipient
 
             // Content
             $mail->isHTML(true); // Set email format to HTML
-            $mail->Subject = "Email from" . $name . " - " . $email;
+            $mail->Subject = "Email from " . $name . " - " . $email;
             $mail->Body = "
                 <h2>New Contact Form Submission</h2>
                 <p><strong>Name:</strong> $name</p>
