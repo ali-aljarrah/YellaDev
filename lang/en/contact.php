@@ -6,6 +6,7 @@ return [
     "name" => "First name: ",
     "last_name" => "Last name ",
     "email" => "Email:",
+    "email_1" => "Email",
     "phone" => "Phone:",
     "address" => "Address:",
     "say_hello" => "Say Hello",
@@ -17,5 +18,7 @@ return [
     "error_message" => "Please enter your message.",
     "error_general" => "Oops! Something went wrong. Please try again.",
     "success_message" => "Thank you for contacting us! We will get back to you soon.",
-    "contact_with_yelladev" => "Contact With YellaDev"
+    "contact_with_yelladev" => "Contact With YellaDev",
+    "whatsapp" => "Whatsapp",
+    "scan_qr" => "Scan the QR"
 ];

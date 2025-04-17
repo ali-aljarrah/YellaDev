@@ -19,7 +19,7 @@
 
         <section class="hero-section d-flex justify-content-center align-items-center">
 
-            <div class="container">
+            <div class="container wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
                 <div class="row align-items-center">
 
                     <div class="col-lg-6 col-12 mx-auto">
@@ -66,7 +66,7 @@
                 <div class="row align-items-center">
 
                     <div class="col-lg-6 col-12">
-                        <div class="ratio ratio-1x1">
+                        <div class="ratio ratio-1x1 wow animate__animated <?php echo ($lang == "ar") ? 'animate__fadeInRight' : 'animate__fadeInLeft'; ?>" data-wow-duration="2s" data-wow-delay=".2s">
                             <div class="custom-video h-100">
                                 <img width="636" height="477" loading="lazy" src="/assets/imgs/aboutt.webp" class="img-fluid" alt="<?php getContent("yellaDev", "common"); ?> - <?php getContent("we_started", "home") ?>">
                             </div>
@@ -78,14 +78,16 @@
                     </div>
 
                     <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
-                        <em class="text-white"><?php getContent("about", "common"); ?></em>
-
-                        <h2 class="text-white mb-3"><?php getContent("yellaDev", "common"); ?></h2>
-
-                        <p class="text-white"><?php getContent("yellaDev_is_a_team", "about"); ?></p>
-                        <p class="text-white"><?php getContent("our_experties_lies", "home"); ?></p>
-
-                        <a href="/about" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4"><?php getContent("about", "common"); ?></a>
+                        <div class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
+                            <em class="text-white"><?php getContent("about", "common"); ?></em>
+    
+                            <h2 class="text-white mb-3"><?php getContent("yellaDev", "common"); ?></h2>
+    
+                            <p class="text-white"><?php getContent("yellaDev_is_a_team", "about"); ?></p>
+                            <p class="text-white"><?php getContent("our_experties_lies", "home"); ?></p>
+    
+                            <a href="/about" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4"><?php getContent("about", "common"); ?></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,13 +98,13 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-12 text-center mb-4 pb-lg-2">
+                    <div class="col-lg-12 text-center mb-4 pb-lg-2 wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
 
                         <h2 class="text-white"><?php getContent("services", "common"); ?></h2>
                         <h3 class="text-white"><?php getContent("what_sets_us", "home"); ?></h3>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
+                    <div class="col-lg-3 col-md-6 col-12 h-100 mb-4 wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <a href="/services" class="h-100 d-block">
                             <div class="team-block-wrap h-100">
                                 <div class="team-block-info d-flex flex-column">
@@ -118,7 +120,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
+                    <div class="col-lg-3 col-md-6 col-12 h-100 mb-4 wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                         <a href="/services" class="h-100 d-block">
                                 <div class="team-block-wrap h-100">
                                     <div class="team-block-info d-flex flex-column">
@@ -135,7 +137,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 h-100 mb-4">
+                    <div class="col-lg-3 col-md-6 col-12 h-100 mb-4 wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <a href="/services" class="h-100 d-block">
                             <div class="team-block-wrap h-100">
                                 <div class="team-block-info d-flex flex-column">
@@ -152,7 +154,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 h-100">
+                    <div class="col-lg-3 col-md-6 col-12 h-100 wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <a href="/services" class="h-100 d-block">
                             <div class="team-block-wrap h-100">
                                 <div class="team-block-info d-flex flex-column">
@@ -179,11 +181,11 @@
 
                     <div class="col-lg-12 mb-4 mb-lg-0">
                         <div class="menu-block-wrap">
-                            <div class="text-center mb-5 pb-lg-2">
+                            <div class="text-center mb-5 pb-lg-2 wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
                                 <h2 class="text-white"><?php getContent("technologies_we_use", "home"); ?></h2>
                             </div>
 
-                            <div class="menu-block text-center">
+                            <div class="menu-block text-center wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
                                 <div>
                                     <h2 class="h6"><?php getContent("we_leverage_cutting", "home"); ?></h2>
                                 </div>
@@ -191,7 +193,7 @@
                                 <div class="border-top mt-3 pt-2"></div>
                             </div>
 
-                            <div class="menu-block my-5 text-center">
+                            <div class="menu-block my-5 text-center wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
                                 <div>
                                     <h3 class="h6"><?php getContent("lets_transform_your_vision", "home"); ?></h3>
                                 </div>

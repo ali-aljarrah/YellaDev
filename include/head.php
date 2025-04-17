@@ -55,3 +55,5 @@ if (empty($_SESSION['csrf_token'])) {
 
     <meta name="twitter:card" content="summary" />
     <meta property="og:type" content="business.business">
+
+    <link rel="stylesheet" href="/assets/css/animate.min.css" />

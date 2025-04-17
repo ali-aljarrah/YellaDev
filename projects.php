@@ -5,24 +5,6 @@
 <meta property="og:url" content="https://yelladev.com/projects">
 <meta property="og:title" content="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?>">
 <meta property="og:description" content="Explore YellaDev's portfolio of stunning, high-performance websites & digital solutions. See how we transform ideas into results for our clients.">
-<style>
-    #projects-container .col-lg-3 {
-        transition: all 0.3s ease;
-    }
-
-    .project-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        justify-content: center;
-    }
-
-    .project-tags button {
-        margin: 2px;
-        transition: all 0.2s ease;
-    }
-</style>
-
 </head>
 
 <body class="pt-0">
@@ -32,7 +14,7 @@
 
     <main>
         <section class="pages-hero-section d-flex justify-content-center align-items-center pt-180">
-            <div class="container">
+            <div class="container wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
                 <div class="row">
                     <div class="col-lg-10 text-center mx-auto">
                         <h1 class="mb-3 text"><?php getContent("our_work_speaks", "projects"); ?></h1>
@@ -47,19 +29,19 @@
         <section class="py-3">
             <div class="container">
                 <div class="project-tags text-center mb-4">
-                    <button class="btn custom-btn custom-border-btn active" data-filter="all">All</button>
+                    <button class="btn custom-btn custom-border-btn active" data-filter="all"><?php getContent("all", "projects"); ?></button>
 
-                    <button class="btn custom-btn custom-border-btn" data-filter="ecommerce">E-commerce</button>
-                    <button class="btn custom-btn custom-border-btn" data-filter="food">Food</button>
-                    <button class="btn custom-btn custom-border-btn" data-filter="health">Health</button>
-                    <button class="btn custom-btn custom-border-btn" data-filter="technology">Technology</button>
-                    <button class="btn custom-btn custom-border-btn" data-filter="beauty">Beauty</button>
-                    <button class="btn custom-btn custom-border-btn" data-filter="fashion">Fashion</button>
-                    <button class="btn custom-btn custom-border-btn" data-filter="clinic">Clinic</button>
+                    <button class="btn custom-btn custom-border-btn" data-filter="ecommerce"><?php getContent("ecommerce", "projects"); ?></button> 
+                    <button class="btn custom-btn custom-border-btn" data-filter="food"><?php getContent("food", "projects"); ?></button>
+                    <button class="btn custom-btn custom-border-btn" data-filter="health"><?php getContent("health", "projects"); ?></button>
+                    <button class="btn custom-btn custom-border-btn" data-filter="technology"><?php getContent("technology", "projects"); ?></button>
+                    <button class="btn custom-btn custom-border-btn" data-filter="beauty"><?php getContent("beauty", "projects"); ?></button>
+                    <button class="btn custom-btn custom-border-btn" data-filter="fashion"><?php getContent("fashion", "projects"); ?></button>
+                    <button class="btn custom-btn custom-border-btn" data-filter="clinic"><?php getContent("clinic", "projects"); ?></button>
 
-                    <button class="btn custom-btn custom-border-btn" data-filter="education">Education</button>
-                    <button class="btn custom-btn custom-border-btn" data-filter="sms">SMS Services</button>
-                    <button class="btn custom-btn custom-border-btn" data-filter="help">Help center</button>
+                    <button class="btn custom-btn custom-border-btn" data-filter="education"><?php getContent("education", "projects"); ?></button>
+                    <button class="btn custom-btn custom-border-btn" data-filter="sms"><?php getContent("sms_services", "projects"); ?></button>
+                    <button class="btn custom-btn custom-border-btn" data-filter="help"><?php getContent("help_center", "projects"); ?></button>
                 </div>
             </div>
         </section>
@@ -216,6 +198,7 @@
                         </a>
                         <h3 class="text-white h5 mt-3">salamanutrition.com</h3>
                     </div>
+
                     <div class="col-lg-3 mb-4" data-tags="clinic beauty health">
                         <a href="/assets/imgs/projects/wellnessbd.png" data-lightbox="project-gallery" data-title="wellnessbd.com">
                             <img class="img-fluid rounded" width="306" height="140" loading="lazy" src="/assets/imgs/projects/wellnessbd.png" alt="<?php getContent('yellaDev', 'common'); ?> - <?php getContent('projects', 'common'); ?> - 3">
@@ -228,7 +211,7 @@
         </section>
 
         <section class="py-5 contact-section">
-            <div class="container">
+            <div class="container" data-wow-duration="2s" data-wow-delay=".2s">
                 <div class="row py-5 my-5">
                     <div class="col-lg-12 text-center">
                         <h2 class="fw-bold h2 text-white mb-5">

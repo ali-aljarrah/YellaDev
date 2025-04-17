@@ -46,7 +46,7 @@ if ($lang == 'ar') {
 
     <main>
         <section class="pages-hero-section d-flex justify-content-center align-items-center pt-180">
-            <div class="container">
+            <div class="container wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
                 <div class="row">
                     <div class="col-lg-10 text-center mx-auto">
                         <h1 class="mb-3 text"><?php getContent("our_services_designed", "services"); ?></h1>
@@ -59,7 +59,7 @@ if ($lang == 'ar') {
         </section>
 
         <section class="section-padding">
-            <div class="container">
+            <div class="container wow animate__animated animate__slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
                 <div class="row justify-content-center">
                     <div class="timeline">
                         <div class="timeline-container timeline-container-left">
@@ -146,7 +146,7 @@ if ($lang == 'ar') {
         </section>
 
         <section class="py-5 contact-section">
-            <div class="container">
+            <div class="container wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
                 <div class="row py-5 my-5">
                     <div class="col-lg-12 text-center">
                         <h2 class="fw-bold h2 text-white mb-5">

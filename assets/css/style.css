@@ -2,6 +2,7 @@ body {
   padding-top: 90px;
   min-height: 100vh;
   background-color: #000000;
+  overflow-x: hidden;
 }
 
 /* width */
@@ -1164,7 +1165,25 @@ strong {
   padding: 10px;
 }
 
+.gold-color {
+  color: #c7a965;
+}
 
+.contact-card {
+  padding: 30px 20px;
+  border-radius: 10px;
+  border: 2px solid #c7a965;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.contact-card:hover {
+  box-shadow: #c7a965 0px 10px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 
 /*---------------------------------------
     REVIEWS              
@@ -1491,6 +1510,22 @@ strong {
 
 .lightbox {
   z-index: 9999999;
+}
+
+#projects-container .col-lg-3 {
+  transition: all 0.3s ease;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.project-tags button {
+  margin: 2px;
+  transition: all 0.2s ease;
 }
 
 /*---------------------------------------
