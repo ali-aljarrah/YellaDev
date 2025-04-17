@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /projects
+Disallow: /helper/
 Disallow: /cgi-bin/
 Sitemap: https://yelladev.com/sitemap.xml

@@ -1,5 +1,10 @@
 <?php include 'include/head.php'; ?>
 <title><?php getContent("yellaDev", "common"); ?> - <?php getContent("contact", "common"); ?></title>
+<meta name="description" content="Get in touch with YellaDev's expert team! Let's discuss your project, website needs, or digital goals. Reach out today for a consultation.">
+<link rel="canonical" href="https://yelladev.com/contact">
+<meta property="og:url" content="https://yelladev.com/contact">
+<meta property="og:title" content="<?php getContent("yellaDev", "common"); ?> - <?php getContent("contact", "common"); ?>">
+<meta property="og:description" content="Get in touch with YellaDev's expert team! Let's discuss your project, website needs, or digital goals. Reach out today for a consultation.">
 </head>
 <body class="pt-0">
 

@@ -33,6 +33,11 @@ if ($lang == 'ar') {
 } 
 ?>
 <title><?php getContent("yellaDev", "common"); ?> - <?php getContent("services", "common"); ?></title>
+<meta name="description" content="YellaDev delivers custom web design, development & digital solutions tailored to your business. Performance-driven, visually stunning results.">
+<link rel="canonical" href="https://yelladev.com/services">
+<meta property="og:url" content="https://yelladev.com/services">
+<meta property="og:title" content="<?php getContent("yellaDev", "common"); ?> - <?php getContent("services", "common"); ?>">
+<meta property="og:description" content="YellaDev delivers custom web design, development & digital solutions tailored to your business. Performance-driven, visually stunning results.">
 </head>
 <body class="pt-0">
 

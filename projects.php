@@ -1,6 +1,10 @@
 <?php include 'include/head.php'; ?>
 <title><?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?></title>
-
+<meta name="description" content="Explore YellaDev's portfolio of stunning, high-performance websites & digital solutions. See how we transform ideas into results for our clients.">
+<link rel="canonical" href="https://yelladev.com/projects">
+<meta property="og:url" content="https://yelladev.com/projects">
+<meta property="og:title" content="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?>">
+<meta property="og:description" content="Explore YellaDev's portfolio of stunning, high-performance websites & digital solutions. See how we transform ideas into results for our clients.">
 <style>
     #projects-container .col-lg-3 {
         transition: all 0.3s ease;
