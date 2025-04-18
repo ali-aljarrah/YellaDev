@@ -131,7 +131,7 @@
                                     </div>
 
                                 <div class="team-block-image-wrap h-100">
-                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/w2.jpg" class="team-block-image img-fluid" alt="<?php getContent("blazing_fase", "home"); ?>">
+                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/w2.webp" class="team-block-image img-fluid" alt="<?php getContent("blazing_fase", "home"); ?>">
                                 </div>
                             </div>
                         </a>
@@ -165,7 +165,7 @@
                                 </div>
 
                                 <div class="team-block-image-wrap h-100">
-                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/web.png" class="team-block-image img-fluid" alt="<?php getContent("end_to_end", "home"); ?>">
+                                    <img loading="lazy" width="306" height="462" src="/assets/imgs/team/web.webp" class="team-block-image img-fluid" alt="<?php getContent("end_to_end", "home"); ?>">
                                 </div>
                             </div>
                         </a>
