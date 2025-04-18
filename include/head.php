@@ -40,8 +40,7 @@ if (empty($_SESSION['csrf_token'])) {
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 
-     <!-- Lightbox CSS -->
-     <link rel="stylesheet" href="/assets/css/lightbox.min.css" />
+    
 
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/vegas.min.css" rel="stylesheet">

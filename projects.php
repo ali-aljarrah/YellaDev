@@ -5,6 +5,9 @@
 <meta property="og:url" content="https://yelladev.com/projects">
 <meta property="og:title" content="<?php getContent("yellaDev", "common"); ?> - <?php getContent("projects", "common"); ?>">
 <meta property="og:description" content="Explore YellaDev's portfolio of stunning, high-performance websites & digital solutions. See how we transform ideas into results for our clients.">
+<!-- Lightbox CSS -->
+<link rel="stylesheet" href="/assets/css/lightbox.min.css" />
+
 </head>
 
 <body class="pt-0">
@@ -230,36 +233,11 @@
 
     <?php include 'include/footer.php'; ?>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.project-tags button');
-            const projects = document.querySelectorAll('#projects-container .col-lg-3');
+    
+    <!-- Lightbox JS -->
+    <script src="/assets/js/lightbox.min.js" defer></script>
 
-            // Add click event to each filter button
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-
-                    // Add active class to clicked button
-                    this.classList.add('active', 'custom-btn');
-
-                    const filterValue = this.getAttribute('data-filter');
-
-                    // Filter projects
-                    projects.forEach(project => {
-                        const projectTags = project.getAttribute('data-tags').split(' ');
-
-                        if (filterValue === 'all' || projectTags.includes(filterValue)) {
-                            project.style.display = 'block';
-                        } else {
-                            project.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        });
-    </script>
+    <script src="/assets/js/projects.js" defer></script>
 </body>
 
 </html>

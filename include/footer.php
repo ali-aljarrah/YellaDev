@@ -88,11 +88,8 @@
  <!-- JAVASCRIPT FILES -->
 <script src="/assets/js/jquery.min.js"></script>
 
-<!-- Lightbox JS -->
-<script src="/assets/js/lightbox.min.js"></script>
 
 <script src="/assets/js/jquery.sticky.js" defer></script>
-<!-- <script src="/assets/js/click-scroll.js" defer></script> -->
 <script src="/assets/js/vegas.min.js" defer></script>
 <script src="/assets/js/custom.js" defer></script>
 <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
