@@ -25,7 +25,7 @@
                     <div class="col-lg-6 col-12 mx-auto">
                         <em class="small-text"><?php getContent("welcome_to", "home"); ?></em>
 
-                        <h1><?php getContent("yellaDev", "common"); ?> test</h1>
+                        <h1><?php getContent("yellaDev", "common"); ?></h1>
 
                         <p class="text-white mb-4 pb-lg-2">
                             <?php getContent("where_innovation", "home"); ?>
