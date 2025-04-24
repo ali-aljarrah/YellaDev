@@ -20,9 +20,20 @@
           <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/about") { echo "active"; } ?>" id="about-link" href="/about"><?php getContent("about", "common"); ?></a>
         </li>
 
-        <li class="nav-item">
+
+        <li class="nav-item dropdown" id="dropdownMenuButton">    
           <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/services") { echo "active"; } ?>" id="services-link" href="/services"><?php getContent("services", "common"); ?></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background: #c4a763;">
+                <li class="dropdown-item"><a href="#" style="color:beige">ali</a></li>
+                <li class="dropdown-item"><a href="#" style="color:beige">zainab</a></li>
+                <li class="dropdown-item"><a href="#" style="color:beige">ali222</a></li>
+            </ul>
         </li>
+
+
+        <!-- <li class="nav-item">
+          <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/services") { echo "active"; } ?>" id="services-link" href="/services"><?php getContent("services", "common"); ?></a>
+        </li> -->
 
         <li class="nav-item">
           <a class="nav-link menu-link text-white <?php if ($_SERVER['REQUEST_URI'] == "/projects") { echo "active"; } ?>" id="projects-link" href="/projects"><?php getContent("projects", "common"); ?></a>
