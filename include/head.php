@@ -39,20 +39,16 @@ if (empty($_SESSION['csrf_token'])) {
     <link rel="icon" type="image/png" href="/assets/imgs/icon/favicon-16x16.png" sizes="16x16" />
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-
-    
-
+    <link href="/assets/css/vegas.min.css" rel="preload" as="style" onload='this.rel="stylesheet"'>
+    <link href="/assets/css/toastr.min.css" rel="preload" as="style" onload='this.rel="stylesheet"'>
+    <link href="/assets/css/animate.min.css" rel="preload" as="style" onload='this.rel="stylesheet"'  />
     <link href="/assets/css/style.css" rel="stylesheet">
-    <link href="/assets/css/vegas.min.css" rel="stylesheet">
-    <link href="/assets/css/toastr.min.css" rel="stylesheet">
-    
-   
 
-    <meta name="keywords" content="YellaDev,SEO,custom websites,e-commerce platforms,brand identities,Digital Excellence,build websites">
+    <meta name="keywords" content="YellaDev,SEO,custom websites,e-commerce platforms,brand identities,Digital Excellence,build websites,Syria,Damascus,Web Development,SEO-Friendly,Hosting & Domain,Website Maintenance">
     <meta name="author" content="www.yelladev.com">
     <meta property="og:image" content="https://yelladev.com/assets/imgs/og.png">
 
     <meta name="twitter:card" content="summary" />
     <meta property="og:type" content="business.business">
 
-    <link rel="stylesheet" href="/assets/css/animate.min.css" />
+    

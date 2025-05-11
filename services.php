@@ -59,7 +59,7 @@ if ($lang == 'ar') {
         </section>
 
         <section class="section-padding">
-            <div class="container wow animate__animated animate__slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+            <div class="container wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
                 <div class="row justify-content-center">
                     <div class="timeline">
                         <div class="timeline-container timeline-container-left">

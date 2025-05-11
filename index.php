@@ -7,6 +7,55 @@
 <meta property="og:title" content="<?php getContent("yellaDev", "common"); ?> - <?php getContent("home", "common"); ?>">
 <meta property="og:description" content="YellaDev builds high-performance websites & digital experiences to help startups and brands stand out online. Creative, technical, results-driven.">
 
+<style>
+        .domain-checker {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .domain-input-group {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+        <?php 
+            if($lang == "ar") {
+                echo '
+                 #domain-name {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+                #domain-suffix {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    width: 120px;
+                    height: 52px;
+                    background-color: #b48b48;
+                    border-color: transparent;
+                }
+                ';
+            } else {
+                echo '
+                 #domain-name {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+                #domain-suffix {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    width: 120px;
+                    height: 52px;
+                    background-color: #b48b48;
+                    border-color: transparent;
+                }
+                ';
+            }
+        
+        ?>
+     
+    </style>
+
 </head>
 
 <body class="pt-0">
@@ -19,7 +68,7 @@
 
         <section class="hero-section d-flex justify-content-center align-items-center">
 
-            <div class="container wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
+            <div class="container">
                 <div class="row align-items-center">
 
                     <div class="col-lg-6 col-12 mx-auto">
@@ -93,6 +142,38 @@
             </div>
         </section>
 
+        <section class="py-5 my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 mx-auto wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                        <h2 class="text-center text-white mb-4 h2"><?php getContent("domain_checker", "home") ?></h2>
+            
+                        <form method="post" id="domainForm" name="domainForm" class="mb-3 custom-form contact-form" role="form">
+                            <div class="domain-input-group">
+                                <input type="text" class="form-control" id="domain-name" name="domain_name" 
+                                    placeholder="yourdomain" required>
+                                <select class="form-select" id="domain-suffix" name="suffix">
+                                    <option value=".com">.com</option>
+                                    <option value=".net">.net</option>
+                                    <option value=".org">.org</option>
+                                    <option value=".io">.io</option>
+                                    <option value=".co">.co</option>
+                                    <option value=".dev">.dev</option>
+                                </select>
+                            </div>
+                            
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                            <input type="hidden" name="hb" value="">
+
+                            <button type="submit" name="DomainCheckBtn" id="DomainCheckBtn" class="form-control w-fit mx-auto">
+                            <?php getContent("check_availability", "home") ?>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="barista-section section-padding gra-bg">
             <div class="container">
@@ -215,6 +296,115 @@
 
 
     <?php include 'include/footer.php'; ?>
+
+
+    <script>
+        $(document).ready(function() {
+            // Execute reCAPTCHA v3 on form submission
+            $('#domainForm').on('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+
+                $("#DomainCheckBtn").prop("disabled", true);
+
+                var domain = $("#domain-name").val().trim();
+                var suffix = $("#domain-suffix").val().trim();
+
+                // Validate domain
+                if (!domain) {
+                    toastr.error("<?php echo getContent("empty_domain", "home"); ?>");
+                    $("#DomainCheckBtn").prop("disabled", false);
+                    return;
+                } else if (!/^[a-z0-9-]+$/i.test(domain)) {
+                    toastr.error("<?php echo getContent("domain_can_only_contain", "home"); ?>");
+                    $("#DomainCheckBtn").prop("disabled", false);
+                    return;
+                } else if (domain.length > 63) {
+                    toastr.error("<?php echo getContent("domain_name_too", "home"); ?>");
+                    $("#DomainCheckBtn").prop("disabled", false);
+                    return;
+                } else if (/^-|-$/.test(domain)) {
+                    toastr.error("<?php echo getContent("domain_cannot_start", "home"); ?>");
+                    $("#DomainCheckBtn").prop("disabled", false);
+                    return;
+                }
+
+                // Validate TLD
+                const allowedTlds = ['.com', '.net', '.org', '.io', '.co', '.dev'];
+                if (!allowedTlds.includes(suffix)) {
+                    toastr.error("<?php echo getContent("invalid_domain_suffix", "home"); ?>");
+                    $("#DomainCheckBtn").prop("disabled", false);
+                    return;
+                }
+
+                //Execute reCAPTCHA and get the token
+                grecaptcha.ready(function() {
+                    grecaptcha.execute("<?php echo captcha_siteKey ?>", { action: 'submit' }).then(function(token) {
+                        // Add the token to the hidden input
+                        $('#g-recaptcha-response').val(token);
+
+                        // Serialize form data
+                        var formData = $('#domainForm').serialize();
+
+                        // Send AJAX request
+                        $.ajax({
+                            url: '/helper/domain_checker.php',
+                            type: 'POST',
+                            data: formData,
+                            success: function(response) {
+                                var response = JSON.parse(response);
+                                
+                                $("#DomainCheckBtn").prop("disabled", false);
+
+                                if (response.error) {
+                                    if (response.message == "name") {
+                                        toastr.error("<?php echo getContent("domain_name_is_required", "home"); ?>");
+                                        return;
+                                    }
+                                    if (response.message == "pattern") {
+                                        toastr.error("<?php echo getContent("domain_can_only_contain", "home"); ?>");
+                                        return;
+                                    }
+                                    if (response.message == "length") {
+                                        toastr.error("<?php echo getContent("domain_name_too", "home"); ?>");
+                                        return;
+                                    }
+                                    if (response.message == "symbol") {
+                                        toastr.error("<?php echo getContent("domain_cannot_start", "home"); ?>");
+                                        return;
+                                    }
+                                    if (response.message == "tld") {
+                                        toastr.error("<?php echo getContent("invalid_domain_suffix", "home"); ?>");
+                                        return;
+                                    }
+                                    if (response.message == "format") {
+                                        toastr.error("<?php echo getContent("invalid_domain_format", "home"); ?>");
+                                        return;
+                                    }
+
+                                    toastr.error("<?php echo getContent("error_general", "contact"); ?>");
+                                    return;
+                                }
+
+                                if(!response.error) {
+                                    if(response.available) {
+                                        toastr.success("<?php echo getContent("domain_is_available", "home"); ?>");
+                                    } else {
+                                        toastr.error("<?php echo getContent("domain_is_not_available", "home"); ?>");
+                                    }
+                                    $('#contactForm')[0].reset(); // Reset the form
+                                }
+
+                            },
+                            error: function(xhr, status, error) {
+                                $("#DomainCheckBtn").prop("disabled", false);
+                                toastr.error("<?php echo getContent("error_general", "contact"); ?>");
+                            }
+                        });
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,1 +1,17 @@
-!function(s){"use strict";s(".navbar-collapse a").on("click",function(){s(".navbar-collapse").collapse("hide")}),s(function(){s(".hero-slides").vegas({slides:[{src:"/assets/imgs/slides/bg-home-2.webp"},{src:"/assets/imgs/slides/slide7.jpg"},{src:"/assets/imgs/slides/slide9.jpg"}],timer:!1,animation:"kenburns"})}),s(".smoothscroll").click(function(){var e,i,t,a=s(this).attr("href"),l=s(a),o=s(".navbar").height()+60;return e=l,i=o,t=e.offset().top,s("body,html").animate({scrollTop:t-i},300),!1})}(window.jQuery);
+!(function (s) {
+  "use strict";
+  s(".navbar-collapse a").on("click", function () {
+    s(".navbar-collapse").collapse("hide");
+  }),
+    s(function () {
+      s(".hero-slides").vegas({
+        slides: [
+          { src: "/assets/imgs/slides/bg-home-2.webp" },
+          { src: "/assets/imgs/slides/slide7.webp" },
+          { src: "/assets/imgs/slides/slide9.webp" },
+        ],
+        timer: !1,
+        animation: "kenburns",
+      });
+    });
+})(window.jQuery);
